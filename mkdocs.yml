@@ -41,12 +41,26 @@ theme:
 nav:
   - Home: index.md
   - Overview:
-      - docs/overview/project_motivation.md
-      - docs/overview/datasets_description.md
+      - Project Motivation: overview/project_motivation.md
+      - Datasets description: overview/datasets_description.md
+  - Methods:
+      - General Methods: methods/index.md
+      - Data extraction: methods/data_extraction.md
+      - Data validation: methods/data_validation.md
+      - Benchmarking: methods/benchmarking.md
+  - Datasets:
+      - Overview: datasets/index.md
+      - Dataset_1: datasets/dataset_1.md #1: datasets/dataset_1.md
+      - Dataset_2: datasets/dataset_2.md #2: datasets/dataset_2.md
+      - Dataset_3: datasets/dataset_3.md #n: datasets/dataset_n.md
+  - Tutorial: tutorial.md
+  - Docs: documentation.md
   - About:
-#      - docs/about/changelog.md
-#      - docs/about/conduct.md
-      - docs/about/license.md
+      - Team: about/team.md
+      - How to cite: about/how_to_cite.md
+      - Changelog: about/changelog.md
+      - Code of conduct: about/conduct.md
+      - License: about/license.md
 
 markdown_extensions:
   - abbr
@@ -88,7 +102,7 @@ plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - autorefs
-  - social
+  #- social
   - offline
 #  - gen-files:
 #      scripts:
