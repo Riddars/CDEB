@@ -52,7 +52,14 @@ nav:
       - Overview: datasets/index.md
       - Dataset_1: datasets/dataset_1.md #1: datasets/dataset_1.md
       - Dataset_2: datasets/dataset_2.md #2: datasets/dataset_2.md
-      - Dataset_3: datasets/dataset_3.md #n: datasets/dataset_n.md
+      - Dataset_3: datasets/dataset_3.md #n: datasets/dataset_3.md
+      - Dataset_4: datasets/dataset_4.md #n: datasets/dataset_4.md
+      - Dataset_5: datasets/dataset_5.md #n: datasets/dataset_5.md
+      - Dataset_6: datasets/dataset_6.md #n: datasets/dataset_6.md
+      - Dataset_7: datasets/dataset_7.md #n: datasets/dataset_7.md
+      - Dataset_8: datasets/dataset_8.md #n: datasets/dataset_8.md
+      - Dataset_9: datasets/dataset_9.md #n: datasets/dataset_9.md
+      
   - Tutorial: tutorial.md
   - Docs: documentation.md
   - About:
