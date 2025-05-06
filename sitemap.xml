@@ -2,98 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ai-chem.github.io/CDEB/index.html</loc>
-         <lastmod>2025-05-05</lastmod>
-    </url>
-    <url>
-         <loc>https://ai-chem.github.io/CDEB/documentation.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/tutorial.html</loc>
-         <lastmod>2025-05-05</lastmod>
-    </url>
-    <url>
-         <loc>https://ai-chem.github.io/CDEB/about/changelog.html</loc>
-         <lastmod>2025-05-05</lastmod>
-    </url>
-    <url>
-         <loc>https://ai-chem.github.io/CDEB/about/conduct.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/about/how_to_cite.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/about/license.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/about/team.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/datasets/dataset_1.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/datasets/dataset_10.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
+    </url>
+    <url>
+         <loc>https://ai-chem.github.io/CDEB/datasets/dataset_11.html</loc>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/datasets/dataset_2.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/datasets/dataset_3.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/datasets/dataset_4.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/datasets/dataset_5.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/datasets/dataset_6.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/datasets/dataset_7.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/datasets/dataset_8.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/datasets/dataset_9.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/methods/approach.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/methods/benchmarking.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/methods/data_extraction.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/methods/data_validation.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/overview/datasets_description.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
     <url>
          <loc>https://ai-chem.github.io/CDEB/overview/project_motivation.html</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-05-06</lastmod>
     </url>
 </urlset>

@@ -616,6 +616,8 @@
       
         
       
+        
+      
     
     
     
@@ -803,12 +805,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasets/dataset_5.html" class="md-nav__link">
+      <a href="../datasets/dataset_11.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Benzimidazole antibiotics
+    Magnetic nanomaterials
     
   </span>
   
@@ -878,6 +880,29 @@
             Small Molecules
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets/dataset_5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Benzimidazole antibiotics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -971,6 +996,58 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ionic liquids
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Ionic liquids
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
                 
   
@@ -1037,34 +1114,8 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../documentation.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Docs
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     
     
-      
-        
-      
-        
       
         
       
@@ -1085,10 +1136,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -1101,8 +1152,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             About
           </label>
@@ -1144,52 +1195,6 @@
   
   <span class="md-ellipsis">
     How to cite
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../about/changelog.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Changelog
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../about/conduct.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Code of conduct
     
   </span>
   
@@ -1310,42 +1315,41 @@
 <h1 id="project-motivation">Project Motivation<a class="headerlink" href="#project-motivation" title="Permanent link">&para;</a></h1>
 <hr />
 <h2 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h2>
-<p>Scientific progress in chemistry and materials science increasingly relies on machine learning (ML) models, which require access to large volumes of high-quality, structured data. However, the majority of valuable chemical information is still locked in unstructured formats — such as text, tables, and images — within scientific publications.</p>
-<p>Manual data extraction from these sources is:</p>
+<p>Advances in chemistry and materials science increasingly depend on the ability to extract structured data from the vast body of scientific literature. However, much of this information remains embedded in unstructured formats — such as <strong>free text, complex tables, and visual figures</strong> — making it difficult to reuse for computational analysis.</p>
+<p>Manual data extraction is:</p>
 <ul>
-<li><strong>Time-consuming</strong></li>
-<li><strong>Error-prone</strong></li>
-<li><strong>Difficult to scale</strong></li>
+<li><strong>Labor-intensive and slow</strong>  </li>
+<li><strong>Prone to inconsistencies and human error</strong>  </li>
+<li><strong>Unscalable for the growing volume of publications</strong></li>
 </ul>
-<p>Traditional natural language processing (NLP) tools struggle with the complexity and heterogeneity of scientific language and formats. While some rule-based or grammar-driven tools have been developed, they are often limited to narrow domains or specific use cases, and fail to generalize across the breadth of chemical literature.</p>
-<p>Furthermore, scientific documents are inherently <strong>multimodal</strong>, containing essential information not only in text but also in <strong>chemical diagrams, spectral plots, and annotated figures</strong>, which are poorly handled by text-only methods.</p>
+<p>Traditional NLP tools, often trained on general or biomedical corpora, <strong>struggle with the domain-specific syntax and semantics</strong> of chemistry. Moreover, most existing tools are <strong>text-focused</strong> and cannot access information presented in other modalities like <strong>chemical diagrams, plots, and structured tables</strong>, which are critical in chemical reporting.</p>
 <hr />
 <h2 id="relevance">Relevance<a class="headerlink" href="#relevance" title="Permanent link">&para;</a></h2>
-<p>This challenge is critical for the scientific community because:</p>
+<p>This is a central challenge for the research community because:</p>
 <ul>
-<li><strong>High-quality datasets</strong> are the foundation of reliable machine learning models in chemistry.</li>
-<li><strong>Data curation bottlenecks</strong> limit the pace of discovery, from drug development to materials design.</li>
-<li><strong>Multimodal reasoning</strong> — the ability to extract and interpret information from across text, tables, and images — is a prerequisite for building AI systems that can truly understand scientific literature.</li>
+<li><strong>Reliable machine learning models require structured, domain-specific data</strong>  </li>
+<li><strong>Scientific progress is limited by the speed and accuracy of data curation</strong>  </li>
+<li><strong>Multimodal content</strong> — a hallmark of chemistry publications — requires models that can <strong>interpret and align information across text, tables, and images</strong></li>
 </ul>
-<p>Recent advances in large language models (LLMs) and vision-language systems offer promising tools for automatic information extraction. However, their performance on real-world chemical data is still limited due to:</p>
+<p>Recent progress in large language models (LLMs) and multimodal transformers has shown potential, but these models often <strong>underperform in chemical contexts</strong> due to:</p>
 <ul>
-<li>Domain-specific terminology  </li>
-<li>Complex formatting  </li>
-<li>Lack of annotated, multimodal benchmark datasets for training and evaluation</li>
+<li>Lack of fine-grained benchmark datasets  </li>
+<li>Inadequate multimodal training data  </li>
+<li>The absence of standardized evaluation protocols  </li>
 </ul>
 <hr />
 <h2 id="goals-and-objectives">Goals and Objectives<a class="headerlink" href="#goals-and-objectives" title="Permanent link">&para;</a></h2>
-<p>The <strong>main goal</strong> of this project is to <strong>enable and accelerate the development of AI systems for chemical information extraction</strong> by providing high-quality, multimodal benchmark datasets.</p>
-<p>To achieve that, we focus on the following objectives:</p>
+<p>The <strong>central goal</strong> of CDEB is to <strong>create a comprehensive, expert-validated benchmark for chemical information extraction</strong>, enabling the development and assessment of AI systems across multiple chemical domains.</p>
+<p>To accomplish this, the project aims to:</p>
 <ul>
-<li>✅ <strong>Curate a diverse collection of 10 datasets</strong> from peer-reviewed literature, covering nanomaterials, small molecules, metal complexes, and ionic liquids.  </li>
-<li>✅ <strong>Include multimodal content</strong> — text, tables, figures, and chemical structures — to reflect the complexity of real scientific documents.  </li>
-<li>✅ <strong>Ensure data quality</strong> through manual annotation and domain expert validation (cross-checking).  </li>
-<li>✅ <strong>Benchmark the performance of large language models (LLMs)</strong> and analyze their strengths and limitations in real-world extraction tasks.  </li>
-<li>✅ <strong>Promote reproducibility</strong> by publishing metadata, data schemas, and evaluation protocols alongside the datasets.</li>
+<li>✅ <strong>Collect and annotate 11 datasets</strong> from published chemical literature  </li>
+<li>✅ <strong>Capture multimodal representations</strong> — including text, tables, figures, and chemical structures  </li>
+<li>✅ <strong>Apply rigorous expert validation</strong> to ensure annotation quality and consistency  </li>
+<li>✅ <strong>Establish standardized evaluation metrics</strong> for benchmarking model performance  </li>
+<li>✅ <strong>Support reproducibility and transparency</strong> through detailed documentation and metadata  </li>
 </ul>
 <hr />
-<p>Our goal is to bridge the gap between the capabilities of modern AI and the needs of scientists by providing tools and data that support robust, scalable, and accurate scientific information extraction.</p>
+<p>By addressing the lack of multimodal benchmarks in chemistry, CDEB provides a foundation for <strong>robust, scalable, and trustworthy AI tools</strong> that can transform scientific discovery in chemistry and materials science.</p>
 
 
 

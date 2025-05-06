@@ -652,6 +652,8 @@
       
         
       
+        
+      
     
     
     
@@ -839,12 +841,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasets/dataset_5.html" class="md-nav__link">
+      <a href="../datasets/dataset_11.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Benzimidazole antibiotics
+    Magnetic nanomaterials
     
   </span>
   
@@ -914,6 +916,29 @@
             Small Molecules
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets/dataset_5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Benzimidazole antibiotics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1007,6 +1032,58 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ionic liquids
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Ionic liquids
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
                 
   
@@ -1073,34 +1150,8 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../documentation.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Docs
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     
     
-      
-        
-      
-        
       
         
       
@@ -1121,10 +1172,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -1137,8 +1188,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             About
           </label>
@@ -1180,52 +1231,6 @@
   
   <span class="md-ellipsis">
     How to cite
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../about/changelog.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Changelog
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../about/conduct.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Code of conduct
     
   </span>
   
@@ -1382,44 +1387,44 @@
 <h1 id="dataset-overview">Dataset Overview<a class="headerlink" href="#dataset-overview" title="Permanent link">&para;</a></h1>
 <hr />
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<p>This section provides a summary of the datasets included in the <strong>CDEB (Chemical Data Extraction Benchmark)</strong> collection.  </p>
-<p>The datasets cover various chemical domains and are intended for training, testing, and evaluating models for automatic extraction of scientific information from texts, tables, and figures.</p>
+<p>This section summarizes the datasets included in the <strong>Chemical Data Extraction Benchmark (CDEB)</strong> — a curated collection designed to support training and evaluation of models for multimodal information extraction from chemistry publications.</p>
+<p>The datasets span a wide range of chemical subdomains and include annotations from text, tables, and visual content such as plots and chemical diagrams.</p>
 <div class="admonition note">
 <p class="admonition-title">Data Quality</p>
-<p>All datasets have been manually annotated and cross-validated by domain experts, ensuring high accuracy and reliability.</p>
+<p>All datasets were manually annotated and rigorously cross-validated by chemistry experts to ensure high accuracy and consistency.</p>
 </div>
 <hr />
 <h2 id="data-types-and-sources">Data Types and Sources<a class="headerlink" href="#data-types-and-sources" title="Permanent link">&para;</a></h2>
-<p>The data were collected from peer-reviewed scientific publications in PDF format and include:</p>
+<p>The datasets were constructed from full-text PDFs of peer-reviewed articles, combining both automated extraction and manual correction. Each dataset may include:</p>
 <ul>
-<li>Experimental numerical values (e.g., MIC, logP, lgK)</li>
-<li>Chemical structures in SMILES format</li>
-<li>Tabular and graphical data (including images, diagrams, and charts)</li>
-<li>Publication metadata (DOI, journal name, publication year, access information)</li>
+<li>Experimental values (e.g., MIC, logP, lgK, catalytic constants)  </li>
+<li>Chemical identifiers and structures (e.g., SMILES, compound names)  </li>
+<li>Tabular and visual content (figures, plots, spectra, diagrams)  </li>
+<li>Source metadata (DOI, title, authors, journal, year, accessibility)</li>
 </ul>
-<p>Data sources:</p>
+<p>Data originated from:</p>
 <ul>
-<li>Main text of articles</li>
-<li>Tables, diagrams, figures</li>
-<li>Supplementary materials</li>
-<li>Manual annotation and automated extraction with subsequent validation</li>
+<li>Main article bodies  </li>
+<li>Supplementary materials  </li>
+<li>Structured tables and unstructured figures  </li>
+<li>OCR and model-assisted extraction workflows</li>
 </ul>
 <div class="admonition tip">
-<p class="admonition-title">Multimodality</p>
-<p>The datasets include textual, tabular, and visual information, enabling the training of models that work with multiple input modalities simultaneously.</p>
+<p class="admonition-title">Multimodal Composition</p>
+<p>CDEB datasets contain text, table, and figure-based data, enabling the evaluation of models that process diverse input formats.</p>
 </div>
 <hr />
 <h2 id="dataset-structure-and-organization">Dataset Structure and Organization<a class="headerlink" href="#dataset-structure-and-organization" title="Permanent link">&para;</a></h2>
-<p>Each dataset is provided as a table (CSV or Parquet format) and is accompanied by:</p>
+<p>Each dataset is provided in a structured tabular format (CSV or Parquet), and is accompanied by:</p>
 <ul>
-<li>Provenance metadata</li>
-<li>A data schema (description of all columns)</li>
-<li>A validation table (where applicable)</li>
-<li>A Croissant file (automatically generated on Hugging Face)</li>
+<li>Full provenance metadata  </li>
+<li>A detailed schema describing fields and units  </li>
+<li>Validation outputs (where applicable)  </li>
+<li>A Croissant metadata file for interoperability via Hugging Face</li>
 </ul>
 <div class="admonition note">
-<p class="admonition-title">Documentation</p>
-<p>Each dataset is accompanied by user guides and lists of source publications.</p>
+<p class="admonition-title">Supporting Documentation</p>
+<p>All datasets include source article lists, annotation guidelines, and usage notes.</p>
 </div>
 <hr />
 <h2 id="summary-table-of-datasets">Summary Table of Datasets<a class="headerlink" href="#summary-table-of-datasets" title="Permanent link">&para;</a></h2>
@@ -1428,9 +1433,9 @@
 <tr>
 <th>Dataset Name</th>
 <th>Domain</th>
-<th>Number of Records</th>
-<th>Data Type</th>
-<th>Validation</th>
+<th>Records</th>
+<th>Modalities</th>
+<th>Expert Validation</th>
 <th>Link</th>
 </tr>
 </thead>
@@ -1439,7 +1444,7 @@
 <td>Cytotoxicity</td>
 <td>Nanomaterials</td>
 <td>5535</td>
-<td>Multimodal</td>
+<td>Text, tables, figures</td>
 <td>✅</td>
 <td><a href="../datasets/dataset_1.html">Learn more</a></td>
 </tr>
@@ -1447,7 +1452,7 @@
 <td>SelTox</td>
 <td>Nanomaterials</td>
 <td>3286</td>
-<td>Multimodal</td>
+<td>Text, tables, figures</td>
 <td>✅</td>
 <td><a href="../datasets/dataset_2.html">Learn more</a></td>
 </tr>
@@ -1455,7 +1460,7 @@
 <td>Synergy</td>
 <td>Nanomaterials</td>
 <td>3226</td>
-<td>Multimodal</td>
+<td>Text, tables, diagrams</td>
 <td>✅</td>
 <td><a href="../datasets/dataset_3.html">Learn more</a></td>
 </tr>
@@ -1463,15 +1468,23 @@
 <td>Nanozymes</td>
 <td>Nanomaterials</td>
 <td>1133</td>
-<td>Catalytic</td>
+<td>Text, diagrams</td>
 <td>❌</td>
 <td><a href="../datasets/dataset_4.html">Learn more</a></td>
+</tr>
+<tr>
+<td>Magnetic nanomaterials</td>
+<td>Nanomaterials</td>
+<td>2579</td>
+<td>Text, tables</td>
+<td>✅</td>
+<td><a href="../datasets/dataset_11.html">Learn more</a></td>
 </tr>
 <tr>
 <td>Benzimidazoles</td>
 <td>Small molecules</td>
 <td>1721</td>
-<td>SMILES + MIC</td>
+<td>SMILES, numeric values</td>
 <td>✅</td>
 <td><a href="../datasets/dataset_5.html">Learn more</a></td>
 </tr>
@@ -1479,7 +1492,7 @@
 <td>Oxazolidinones</td>
 <td>Small molecules</td>
 <td>3103</td>
-<td>SMILES + MIC</td>
+<td>SMILES, numeric values</td>
 <td>✅</td>
 <td><a href="../datasets/dataset_6.html">Learn more</a></td>
 </tr>
@@ -1487,7 +1500,7 @@
 <td>Chelate Complexes</td>
 <td>Small molecules</td>
 <td>907</td>
-<td>SMILES + lgK</td>
+<td>SMILES, lgK</td>
 <td>✅</td>
 <td><a href="../datasets/dataset_7.html">Learn more</a></td>
 </tr>
@@ -1495,71 +1508,74 @@
 <td>Eye Drops</td>
 <td>Small molecules</td>
 <td>163</td>
-<td>SMILES + permeability</td>
+<td>SMILES, permeability</td>
 <td>✅</td>
 <td><a href="../datasets/dataset_8.html">Learn more</a></td>
-</tr>
-<tr>
-<td>Ionic Liquids</td>
-<td>Small molecules</td>
-<td>4400+</td>
-<td>Tabular</td>
-<td>✅</td>
-<td><a href="../datasets/dataset_10.html">Learn more</a></td>
 </tr>
 <tr>
 <td>Photostability</td>
 <td>Small molecules</td>
 <td>70</td>
-<td>SMILES + photostability</td>
+<td>SMILES, photostability</td>
 <td>✅</td>
 <td><a href="../datasets/dataset_9.html">Learn more</a></td>
+</tr>
+<tr>
+<td>Ionic Liquids</td>
+<td>Ionic compounds</td>
+<td>4400+</td>
+<td>Tabular</td>
+<td>✅</td>
+<td><a href="../datasets/dataset_10.html">Learn more</a></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <h2 id="how-to-use-the-datasets">How to Use the Datasets<a class="headerlink" href="#how-to-use-the-datasets" title="Permanent link">&para;</a></h2>
-<p>The CDEB datasets are intended for:</p>
+<p>The CDEB datasets support a variety of research and development workflows:</p>
 <ul>
-<li>Training and testing information extraction models (LLMs, OCR, image-to-SMILES)</li>
-<li>Building QSAR models and structure–activity relationship analysis</li>
-<li>Benchmarking NLP, vision-language, and multimodal models</li>
-<li>Research in areas such as nanotoxicology, antibiotic resistance, photostability, and more</li>
+<li>Training and evaluating information extraction systems (e.g., LLMs, OCR, image-text models)  </li>
+<li>Developing QSAR models and exploring structure–property relationships  </li>
+<li>Benchmarking multimodal AI for chemistry-focused applications  </li>
+<li>Supporting tasks in materials design, drug discovery, and toxicity prediction</li>
 </ul>
 <div class="admonition tip">
-<p class="admonition-title">Model Evaluation</p>
-<p>The datasets are used to evaluate the performance of modern models for automatic information extraction from scientific publications.</p>
+<p class="admonition-title">Benchmark Usage</p>
+<p>These datasets are already being used to evaluate state-of-the-art models on real-world chemical extraction tasks.</p>
 </div>
 <hr />
 <h2 id="access-to-the-datasets">Access to the Datasets<a class="headerlink" href="#access-to-the-datasets" title="Permanent link">&para;</a></h2>
-<p>The datasets are available through:</p>
+<p>You can access the datasets via:</p>
 <ul>
-<li>Hugging Face Datasets Hub</li>
-<li>The project's GitHub repository</li>
-<li>Direct download in CSV and Parquet formats</li>
-<li>PyPI package (in development)</li>
+<li><a href="https://huggingface.co/ai-chem">Hugging Face Datasets Hub</a>  </li>
+<li>The <a href="https://github.com/ai-chem/CDEB">GitHub repository</a>  </li>
+<li>Direct downloads (CSV/Parquet)  </li>
+<li>An upcoming PyPI Python package for programmatic access</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Croissant Files</p>
-<p>When downloading from Hugging Face, Croissant metadata files describing the dataset structure are automatically available.</p>
+<p>Hugging Face releases include Croissant metadata files for structured dataset interoperability and schema validation.</p>
 </div>
 <hr />
 <h2 id="example-of-loading-a-dataset-in-python">Example of Loading a Dataset in Python<a class="headerlink" href="#example-of-loading-a-dataset-in-python" title="Permanent link">&para;</a></h2>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Load the Synergy dataset from Hugging Face</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="s2">&quot;https://huggingface.co/datasets/ai-chem/synergy/resolve/main/synergy.parquet&quot;</span><span class="p">)</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Direct link to Parquet file</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">parquet_url</span> <span class="o">=</span> <span class="s2">&quot;https://huggingface.co/datasets/ai-chem/Nanozymes/resolve/main/data/train-00000-of-00001.parquet&quot;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># Loading with pandas and pyarrow</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="n">parquet_url</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s2">&quot;pyarrow&quot;</span><span class="p">)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </span></code></pre></div>
 <hr />
 <h1 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h1>
 <ul>
-<li>The datasets cover key chemical domains.</li>
-<li>All data have been manually annotated and cross-validated.</li>
-<li>Full metadata, data schemas, and Croissant descriptions are provided.</li>
-<li>The datasets are suitable for training, testing, and benchmarking models in chemistry and materials science.</li>
+<li>CDEB provides a multimodal benchmark covering key chemical subfields  </li>
+<li>Datasets are expert-validated and rich in metadata  </li>
+<li>Designed for reproducible, scalable training and evaluation of AI models in chemistry  </li>
+<li>Fully documented and accessible through open platforms</li>
 </ul>
-<hr />
 
 
 
