@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chelate-metal-complexes" class="md-skip">
+        <a href="#chelate-complexes" class="md-skip">
           Skip to content
         </a>
       
@@ -956,6 +956,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Metadata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metadata-source-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata – Source Information
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Notes
+    </span>
+  </a>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1345,6 +1369,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Metadata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metadata-source-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata – Source Information
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Notes
+    </span>
+  </a>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1398,200 +1446,155 @@
   
 
 
-<h1 id="chelate-metal-complexes">Chelate Metal Complexes<a class="headerlink" href="#chelate-metal-complexes" title="Permanent link">&para;</a></h1>
-<hr />
+<h1 id="chelate-complexes">Chelate Complexes<a class="headerlink" href="#chelate-complexes" title="Permanent link">&para;</a></h1>
 <h2 id="original-data">Original Data<a class="headerlink" href="#original-data" title="Permanent link">&para;</a></h2>
-<p><strong>Title:</strong> Chelate Metal Complexes<br />
-<strong>Description:</strong><br />
-The dataset contains data on thermodynamic stability constants (lgK) of chelate complexes of gadolinium (Ga), gadolinium (Gd), technetium (Tc), lutetium (Lu), and chelating ligands. These complexes are used as diagnostic markers (contrast agents) in the diagnosis of various diseases during magnetic resonance imaging (MRI).</p>
-<p><strong>Total number of records:</strong> 907<br />
-<strong>Number of features (columns):</strong> 21<br />
-<strong>Data type:</strong> Mixed<br />
-<strong>Application:</strong> Small molecules<br />
-<strong>Automatic validation:</strong> Yes</p>
+<p><strong>Title</strong>: Chelate Complexes<br />
+<strong>Description</strong>:<br />
+The dataset contains data on thermodynamic stability constants (lgK) of chelate complexes formed by gadolinium (Ga, Gd), technetium (Tc), lutetium (Lu), and a variety of chelating ligands. These complexes are studied as potential contrast agents in magnetic resonance imaging (MRI) and other diagnostic applications.</p>
+<ul>
+<li><strong>Total number of records</strong>: 907  </li>
+<li><strong>Number of features (columns)</strong>: 21  </li>
+<li><strong>Application</strong>: Small molecules</li>
+</ul>
 <hr />
 <h2 id="data-scheme">Data Scheme<a class="headerlink" href="#data-scheme" title="Permanent link">&para;</a></h2>
 <h3 id="dataset-column-descriptions">Dataset – Column Descriptions<a class="headerlink" href="#dataset-column-descriptions" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th><strong>Column Name</strong></th>
-<th><strong>Description</strong></th>
+<th>Column Name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>pdf</td>
-<td>Name of the PDF file</td>
-</tr>
-<tr>
-<td>doi</td>
+<td><code>doi</code></td>
 <td>DOI of the article</td>
 </tr>
 <tr>
-<td>doi_source</td>
+<td><code>doi_source</code></td>
 <td>If the source article is cited within a review; otherwise same as DOI</td>
 </tr>
 <tr>
-<td>supplementary</td>
+<td><code>supplementary</code></td>
 <td>0 – data from article; 1 – data from supplementary materials</td>
 </tr>
 <tr>
-<td>title</td>
+<td><code>title</code></td>
 <td>Article title</td>
 </tr>
 <tr>
-<td>publisher</td>
+<td><code>publisher</code></td>
 <td>Publishing organization</td>
 </tr>
 <tr>
-<td>year</td>
+<td><code>year</code></td>
 <td>Year of publication</td>
 </tr>
 <tr>
-<td>access</td>
+<td><code>access</code></td>
 <td>1 – open access; 0 – closed access</td>
 </tr>
 <tr>
-<td>compound_id</td>
-<td>Compound identifier in the article</td>
+<td><code>compound_id</code></td>
+<td>Identifier of the compound in the article</td>
 </tr>
 <tr>
-<td>compound_name</td>
-<td>Name of the compound in the article</td>
+<td><code>compound_name</code></td>
+<td>Abbreviated or full name of the compound</td>
 </tr>
 <tr>
-<td>smiles</td>
-<td>Extracted chemical structure in canonical SMILES format (no stereochemistry)</td>
+<td><code>smiles</code></td>
+<td>Canonical SMILES of the extracted structure (stereochemistry not included)</td>
 </tr>
 <tr>
-<td>smiles_type</td>
-<td>Type of structure: ligand or environment</td>
+<td><code>smiles_type</code></td>
+<td>Type of structure: <code>ligand</code> or <code>environment</code></td>
 </tr>
 <tr>
-<td>metal</td>
+<td>: - <code>ligand</code> – the article provided an image of the isolated ligand</td>
+<td></td>
+</tr>
+<tr>
+<td>: - <code>environment</code> – the image included the full complex, with the central metal removed</td>
+<td></td>
+</tr>
+<tr>
+<td><code>metal</code></td>
 <td>Metal forming the complex</td>
 </tr>
 <tr>
-<td>target</td>
+<td><code>target</code></td>
 <td>Thermodynamic stability constant (lgK)</td>
-</tr>
-<tr>
-<td>page_smiles</td>
-<td>Page number with structure illustration</td>
-</tr>
-<tr>
-<td>origin_smiles</td>
-<td>Source of the structure: figure N / table N / scheme N</td>
-</tr>
-<tr>
-<td>page_metal</td>
-<td>Page number with metal mention</td>
-</tr>
-<tr>
-<td>origin_metal</td>
-<td>Source of metal mention</td>
-</tr>
-<tr>
-<td>page_target</td>
-<td>Page number with target value</td>
-</tr>
-<tr>
-<td>origin_target</td>
-<td>Source of target value: table N / section N</td>
-</tr>
-<tr>
-<td>verification_required</td>
-<td>TRUE – requires manual verification</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <h2 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">&para;</a></h2>
+<h3 id="metadata-source-information">Metadata – Source Information<a class="headerlink" href="#metadata-source-information" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th><strong>Column Name</strong></th>
-<th><strong>Description</strong></th>
+<th>Column Name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>pdf</td>
-<td>PDF file name in the folder</td>
+<td><code>page_smiles</code></td>
+<td>Page number with structure illustration</td>
 </tr>
 <tr>
-<td>doi</td>
-<td>Article DOI</td>
+<td><code>origin_smiles</code></td>
+<td>Source of structure: table N / figure N / scheme N</td>
 </tr>
 <tr>
-<td>doi_source</td>
-<td>Primary DOI source</td>
+<td><code>page_metal</code></td>
+<td>Page number with metal mention</td>
 </tr>
 <tr>
-<td>supplementary</td>
-<td>Source: article (0) or supplementary materials (1)</td>
+<td><code>origin_metal</code></td>
+<td>Source of metal mention</td>
 </tr>
 <tr>
-<td>title</td>
-<td>Article title</td>
+<td><code>page_target</code></td>
+<td>Page number with target value</td>
 </tr>
 <tr>
-<td>publisher</td>
-<td>Publisher</td>
-</tr>
-<tr>
-<td>year</td>
-<td>Year of publication</td>
-</tr>
-<tr>
-<td>access</td>
-<td>Access: open (1) or closed (0)</td>
+<td><code>origin_target</code></td>
+<td>Source of target value: table N / section N</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition note">
-<p class="admonition-title">Key Notes</p>
-<ul>
-<li><strong>Objective:</strong> Extraction of chemical structures of ligands and metals forming a chiral complex, and their corresponding thermodynamic stability constants (lgK)  </li>
-<li><strong>Extracted entities:</strong><br />
-  • SMILES of ligand(s) (<code>smiles</code> column)<br />
-  • Target value lgK (<code>target</code> column)<br />
-  • Metal (<code>metal</code> column)  </li>
-<li>Structures are converted to canonical SMILES format using RDKit; stereochemistry is removed  </li>
-<li>Strict filtering criteria applied to structures and data quality (see constraints below)  </li>
-</ul>
-</div>
+<hr />
+<h2 id="key-notes">Key Notes<a class="headerlink" href="#key-notes" title="Permanent link">&para;</a></h2>
+<p><strong>Objective</strong>:<br />
+To collect and standardize thermodynamic data for metal–ligand complexes from the literature, with a focus on compounds likely to be used as contrast agents in medical applications.</p>
+<p><strong>Extracted entities</strong> include:
+- <code>compound_id</code> – compound's identifier
+- <code>compound_name</code> – compound's abbreviated name
+- <code>smiles</code> – ligand structure in canonical SMILES notation
+- <code>metal</code> – metal forming the complex
+- <code>target</code> – thermodynamic stability constant (lgK)</p>
+<p><strong>Notes</strong>:
+- All structures are converted into canonical SMILES format using RDKit.
+- Stereochemistry is intentionally stripped to ensure standardization.
+- The dataset includes only structures and values that were directly available in the source documents and satisfied certain extraction criteria.</p>
 <hr />
 <h2 id="text-description">Text Description<a class="headerlink" href="#text-description" title="Permanent link">&para;</a></h2>
-<p>This dataset is a structured collection of data extracted from scientific articles, containing information on the thermodynamic stability of chelate metal complexes with organic ligands. The goal is to systematize and standardize information on the stability of metal-ligand complexes that are potentially applicable in medical diagnostics, particularly in MRI imaging.</p>
-<p>Each record represents one complex and includes the following:</p>
-<ul>
-<li>Ligand structure (in canonical SMILES format)  </li>
-<li>Metal forming the complex (e.g., Ga)  </li>
-<li>lgK value (stability constant)  </li>
-<li>Source metadata: article DOI, page numbers, tables, figures  </li>
-<li>Article metadata: title, publisher, year, open access status, etc.</li>
-</ul>
-<p>The data underwent automatic validation, including structural checks against inclusion criteria (e.g., no undefined radicals, bioconjugates, boron clusters, etc.), and canonicalization using RDKit.</p>
+<p>This dataset provides curated measurements of the thermodynamic stability constants (lgK) for metal–ligand complexes, extracted from scientific publications. These stability constants reflect the strength of binding between metal ions (such as Gd, Ga, Tc, Lu) and chelating organic ligands.</p>
+<p>Each record represents a distinct complex and includes:
+- an extracted ligand structure (<code>smiles</code>)
+- the central metal ion involved (<code>metal</code>)
+- the thermodynamic constant (<code>target</code>, as lgK)
+- bibliographic metadata and direct page/section references</p>
+<p>This dataset can be used to facilitate the study of metal–ligand binding behavior and to serve as a benchmark for information extraction tools in chemical and biomedical domains.</p>
 <hr />
 <h2 id="validation-results">Validation Results<a class="headerlink" href="#validation-results" title="Permanent link">&para;</a></h2>
-<p><strong>Validation process description:</strong></p>
-<ul>
-<li>SMILES validity checked using RDKit  </li>
-<li>Stereochemistry removed  </li>
-<li>Structural filtering applied:<br />
-  • Must contain carbon<br />
-  • No undefined/incomplete structures<br />
-  • Excludes boron clusters (e.g., carboranes), bioconjugates, polymers<br />
-  • Excludes precursors or reaction intermediates  </li>
-<li>Source verification (pages, tables, figures)  </li>
-<li>Records with <code>verification_required = TRUE</code> need additional manual validation</li>
-</ul>
+<p><strong>–</strong></p>
 <hr />
 <h2 id="benchmark-results">Benchmark Results<a class="headerlink" href="#benchmark-results" title="Permanent link">&para;</a></h2>
-<p>Coming soon.</p>
-<hr />
+<p><em>Coming soon.</em></p>
 
 
 
