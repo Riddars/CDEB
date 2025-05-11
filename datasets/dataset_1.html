@@ -22,7 +22,7 @@
     
     
       
-        <title>Cytotoxicity - ChemX</title>
+        <title>Cytotox - ChemX</title>
       
     
     
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cytotoxicity
+              Cytotox
             
           </span>
         </div>
@@ -685,7 +685,7 @@
   
   
   <span class="md-ellipsis">
-    Cytotoxicity
+    Cytotox
     
   </span>
   
@@ -698,7 +698,7 @@
   
   
   <span class="md-ellipsis">
-    Cytotoxicity
+    Cytotox
     
   </span>
   
@@ -769,15 +769,6 @@
   <a href="#validation-results" class="md-nav__link">
     <span class="md-ellipsis">
       Validation Results
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benchmark-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benchmark Results
     </span>
   </a>
   
@@ -873,7 +864,7 @@
   
   
   <span class="md-ellipsis">
-    Magnetic nanomaterials
+    Nanomag
     
   </span>
   
@@ -956,7 +947,7 @@
   
   
   <span class="md-ellipsis">
-    Benzimidazole antibiotics
+    Benzimidazoles
     
   </span>
   
@@ -979,7 +970,7 @@
   
   
   <span class="md-ellipsis">
-    Oxazolidinone Antibiotics
+    Oxazolidinones
     
   </span>
   
@@ -1002,7 +993,7 @@
   
   
   <span class="md-ellipsis">
-    Chelate Complexes
+    Complexes
     
   </span>
   
@@ -1048,7 +1039,7 @@
   
   
   <span class="md-ellipsis">
-    Photostability of Multi-Component Crystals
+    Co-crystals
     
   </span>
   
@@ -1109,8 +1100,6 @@
       
         
       
-        
-      
     
     
     
@@ -1160,29 +1149,6 @@
   
   <span class="md-ellipsis">
     Team
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../about/how_to_cite.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    How to cite
     
   </span>
   
@@ -1303,15 +1269,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#benchmark-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benchmark Results
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1339,11 +1296,10 @@
 <h1 id="cytotoxicity-of-nanoparticles-in-nor-">Cytotoxicity of nanoparticles in nor-<a class="headerlink" href="#cytotoxicity-of-nanoparticles-in-nor-" title="Permanent link">&para;</a></h1>
 <h2 id="mal-and-cancer-cell-lines">mal and cancer cell lines<a class="headerlink" href="#mal-and-cancer-cell-lines" title="Permanent link">&para;</a></h2>
 <h2 id="original-data">Original Data<a class="headerlink" href="#original-data" title="Permanent link">&para;</a></h2>
-<p><strong>Title:</strong> Cytotoxicity of nanoparticles in nor-
-mal and cancer cell lines<br />
+<p><strong>Title:</strong> Cytotoxicity of nanoparticles in normal and cancer cell lines<br />
 <strong>Description:</strong> The dataset contains information on the toxicity of inorganic nanoparticles on various normal and cancer cell lines.<br />
-<strong>Total number of records:</strong> 5535<br />
-<strong>Number of features (columns):</strong> 28<br />
+<strong>Total number of records:</strong> 5476<br />
+<strong>Number of features (columns):</strong> 34<br />
 <strong>Data type:</strong> Mixed<br />
 <strong>Application:</strong> Nanomaterials<br />
 <strong>Automatic validation:</strong> Yes</p>
@@ -1360,6 +1316,10 @@ mal and cancer cell lines<br />
 </thead>
 <tbody>
 <tr>
+<td>sn</td>
+<td>Index of the sample (serial number).</td>
+</tr>
+<tr>
 <td>material</td>
 <td>Composition of the nanoparticle/material tested (e.g., SiO₂, Ag).</td>
 </tr>
@@ -1368,67 +1328,75 @@ mal and cancer cell lines<br />
 <td>Physical shape of the particle (e.g., Sphere, Rod).</td>
 </tr>
 <tr>
-<td>coat/functional group</td>
+<td>coat_functional_group</td>
 <td>Surface coating or functionalization (e.g., CTAB, PEG).</td>
 </tr>
 <tr>
-<td>synthesis method</td>
-<td>Synthesis method (e.g., Precipitation, Commercial etc.).</td>
+<td>synthesis_method</td>
+<td>Synthesis method (e.g., Precipitation, Commercial).</td>
 </tr>
 <tr>
-<td>surface charge</td>
+<td>surface_charge</td>
 <td>Reported surface charge (e.g., Negative, Positive).</td>
 </tr>
 <tr>
-<td>size in medium (nm)</td>
+<td>size_in_medium_nm</td>
 <td>Hydrodynamic size in biological medium (nm).</td>
 </tr>
 <tr>
-<td>zeta in medium (mV)</td>
+<td>zeta_in_medium_mv</td>
 <td>Zeta potential in medium (mV; blank if not measured).</td>
 </tr>
 <tr>
-<td>no of cells (cells/well)</td>
+<td>potential_mv</td>
+<td>Surface charge in solution (mV).</td>
+</tr>
+<tr>
+<td>no_of_cells_cells_well</td>
 <td>Cell density per well in the assay.</td>
 </tr>
 <tr>
-<td>human/animal</td>
+<td>cell_type</td>
+<td>Specific cell line name (e.g., PC12, A549).</td>
+</tr>
+<tr>
+<td>human_animal</td>
 <td>Origin of cells (A = Animal, H = Human).</td>
 </tr>
 <tr>
-<td>cell source</td>
+<td>cell_source</td>
 <td>Species/organism (e.g., Rat, Human).</td>
 </tr>
 <tr>
-<td>cell tissue</td>
+<td>cell_tissue</td>
 <td>Tissue origin of the cell line (e.g., Adrenal Gland, Lung).</td>
 </tr>
 <tr>
-<td>cell morphology</td>
+<td>cell_morphology</td>
 <td>Cell shape (e.g., Irregular, Epithelial).</td>
 </tr>
 <tr>
-<td>cell age</td>
+<td>cell_age</td>
 <td>Developmental stage of cells (e.g., Adult, Embryonic).</td>
 </tr>
 <tr>
-<td>time (hr)</td>
-<td>Exposure duration (hours).</td>
+<td>time_hr</td>
+<td>Exposure duration in hours.</td>
 </tr>
 <tr>
 <td>concentration</td>
-<td>Tested concentration of the material (unit-specific, e.g., µg/mL).</td>
+<td>Tested concentration of the material (e.g., µg/mL).</td>
 </tr>
 <tr>
 <td>test</td>
 <td>Cytotoxicity assay type (e.g., MTT, LDH).</td>
 </tr>
 <tr>
-<td>test indicator</td>
+<td>test_indicator</td>
 <td>Reagent measured (e.g., TetrazoliumSalt for MTT).</td>
 </tr>
 <tr>
-<td>viability (%)</td>
+<td>viability_%</td>
 <td>Cell viability percentage relative to control.</td>
 </tr>
 <tr>
@@ -1440,25 +1408,54 @@ mal and cancer cell lines<br />
 <td>Identifier for the article in the dataset.</td>
 </tr>
 <tr>
-<td>core size (nm)</td>
+<td>core_nm</td>
 <td>Primary particle size (nm).</td>
 </tr>
 <tr>
-<td>Hydrodynamic diameter (nm)</td>
+<td>hydrodynamic_nm</td>
 <td>Size in solution including coatings (nm).</td>
 </tr>
 <tr>
-<td>Zeta potential (mV)</td>
-<td>Surface charge in solution (mV).</td>
+<td>journal_name</td>
+<td>Name of the publishing journal.</td>
 </tr>
 <tr>
-<td>Cell type</td>
-<td>Specific cell line name (e.g., PC12, A549).</td>
+<td>publisher</td>
+<td>Publisher of the article.</td>
+</tr>
+<tr>
+<td>year</td>
+<td>Year of publication.</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Title of the article from which data was extracted.</td>
+</tr>
+<tr>
+<td>journal_is_oa</td>
+<td>Whether the journal is Open Access (TRUE/FALSE).</td>
+</tr>
+<tr>
+<td>is_oa</td>
+<td>Whether the specific article is Open Access (TRUE/FALSE).</td>
+</tr>
+<tr>
+<td>oa_status</td>
+<td>Open Access status (e.g., hybrid, gold, closed).</td>
+</tr>
+<tr>
+<td>pdf</td>
+<td>Filename of the corresponding PDF in the PDF archive.</td>
+</tr>
+<tr>
+<td>access</td>
+<td>Access status (1 = open, 0 = closed).</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <h2 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">&para;</a></h2>
+<p>All metadata is included in the main table and also used for source validation.</p>
 <table>
 <thead>
 <tr>
@@ -1485,15 +1482,23 @@ mal and cancer cell lines<br />
 </tr>
 <tr>
 <td>journal_is_oa</td>
-<td>Journal is Open Access (TRUE/FALSE).</td>
+<td>Whether the journal is Open Access (TRUE/FALSE).</td>
 </tr>
 <tr>
 <td>is_oa</td>
-<td>Article is Open Access (TRUE/FALSE; note typo "FASLE" in sample).</td>
+<td>Whether the specific article is Open Access (TRUE/FALSE).</td>
 </tr>
 <tr>
 <td>oa_status</td>
-<td>Open Access status (e.g., hybrid, gold, closed).</td>
+<td>Open Access status at article level (e.g., hybrid, gold, closed).</td>
+</tr>
+<tr>
+<td>pdf</td>
+<td>File name of the article PDF in archive.</td>
+</tr>
+<tr>
+<td>access</td>
+<td>Access code (1 = open access, 0 = closed access).</td>
 </tr>
 </tbody>
 </table>
@@ -1525,9 +1530,6 @@ mal and cancer cell lines<br />
 <li>Correctness of numerical values and units of measurement  </li>
 <li>Presence and accuracy of fields such as "cell tissue", "cell morphology", "Hydrodynamic diameter", etc.</li>
 </ul>
-<hr />
-<h2 id="benchmark-results">Benchmark Results<a class="headerlink" href="#benchmark-results" title="Permanent link">&para;</a></h2>
-<p>Coming soon.</p>
 <hr />
 
 

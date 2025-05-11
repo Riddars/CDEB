@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#validation-process" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -517,6 +522,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Data validation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="data_validation.html" class="md-nav__link md-nav__link--active">
         
   
@@ -528,6 +546,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#validation-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation Process
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -677,7 +721,7 @@
   
   
   <span class="md-ellipsis">
-    Cytotoxicity
+    Cytotox
     
   </span>
   
@@ -769,7 +813,7 @@
   
   
   <span class="md-ellipsis">
-    Magnetic nanomaterials
+    Nanomag
     
   </span>
   
@@ -852,7 +896,7 @@
   
   
   <span class="md-ellipsis">
-    Benzimidazole antibiotics
+    Benzimidazoles
     
   </span>
   
@@ -875,7 +919,7 @@
   
   
   <span class="md-ellipsis">
-    Oxazolidinone Antibiotics
+    Oxazolidinones
     
   </span>
   
@@ -898,7 +942,7 @@
   
   
   <span class="md-ellipsis">
-    Chelate Complexes
+    Complexes
     
   </span>
   
@@ -944,7 +988,7 @@
   
   
   <span class="md-ellipsis">
-    Photostability of Multi-Component Crystals
+    Co-crystals
     
   </span>
   
@@ -1000,8 +1044,6 @@
   
     
     
-      
-        
       
         
       
@@ -1073,29 +1115,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/how_to_cite.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    How to cite
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../about/license.html" class="md-nav__link">
         
   
@@ -1137,6 +1156,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#validation-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation Process
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1161,53 +1197,28 @@
 
   <h1>Data validation</h1>
 
-<h4 id="validity-criteria">Validity Criteria<a class="headerlink" href="#validity-criteria" title="Permanent link">&para;</a></h4>
-<p>The data validation process is critical to ensuring the accuracy and consistency of the annotations within the ChemExtra dataset. The validity criteria focus on several key aspects:  </p>
-<ol>
-<li>
-<p><strong>Entity Identification</strong>: Ensuring that chemical entities such as compounds, properties, and reaction conditions are correctly identified in the text and figures. </p>
-</li>
-<li>
-<p><strong>Property-Value Pairing</strong>: Verifying that property-value pairs (e.g., molecular weight, reaction yields) are correctly associated with their respective entities.  </p>
-</li>
-<li>
-<p><strong>Figure-Text Linking</strong>: Ensuring that relationships between figures (e.g., chemical structures) and the corresponding textual descriptions are accurate and consistent.  </p>
-</li>
-<li>
-<p><strong>Data Consistency</strong>: Cross-checking annotations across multiple sources to ensure that the data is consistent across various articles and that no contradictory information is present.  </p>
-</li>
-</ol>
-<h4 id="validation-process">Validation Process<a class="headerlink" href="#validation-process" title="Permanent link">&para;</a></h4>
-<p>The validation process is a multi-stage, iterative procedure designed to ensure the reliability of the data extracted from the scientific literature:</p>
-<ol>
-<li>
-<p><strong>Stratified Sampling</strong>: A minimum of 20% of the annotated instances from each article are selected for validation. This ensures that a representative sample of the data is checked for consistency and accuracy.</p>
-</li>
-<li>
-<p><strong>Independent Cross-Checking</strong>: Annotated samples are reviewed by independent annotators who verify whether the annotations (e.g., entity spans, property-value pairings) are correct. Errors or inconsistencies are flagged for review.</p>
-</li>
-<li>
-<p><strong>Error Logging</strong>: Errors are logged with binary flags to indicate whether the annotation is correct or incorrect, and the type of error (e.g., repetitive or single error) is identified.</p>
-</li>
-<li>
-<p><strong>Iterative Correction</strong>: Following each validation cycle, errors are corrected, and additional samples are selected for review. The process continues until error rates converge to an acceptable threshold, ensuring high-quality annotations across the dataset.</p>
-</li>
-</ol>
-<h4 id="error-handling">Error Handling<a class="headerlink" href="#error-handling" title="Permanent link">&para;</a></h4>
-<p>When errors are identified, they are handled through a targeted correction process:</p>
-<ol>
-<li>
-<p><strong>False Positives</strong>: Incorrect annotations flagged during validation (false positives) are reviewed and corrected. These corrections are added to the next validation cycle to ensure the data quality improves over time.</p>
-</li>
-<li>
-<p><strong>Repetitive Errors</strong>: In cases where repetitive errors are found, all instances from the corresponding article are reviewed and corrected.</p>
-</li>
-<li>
-<p><strong>Continuous Improvement</strong>: The iterative error correction loop ensures that each new validation cycle progressively improves the overall quality of the data, reducing error rates and enhancing the consistency of the annotations.</p>
-</li>
-</ol>
-<h4 id="validation-results">Validation Results<a class="headerlink" href="#validation-results" title="Permanent link">&para;</a></h4>
-<p>The validation process has led to high accuracy and consistency across the ChemExtra datasets. The multi-stage validation system, combined with the expert-driven annotation and error correction cycles, has resulted in minimal errors across all datasets. For example, in the <em>Cytotox</em> and <em>Seltox</em> datasets, the error rates were reduced to near zero after several cycles of validation and correction. The iterative approach has proven effective in ensuring that the datasets are of the highest quality, with both chemical entity identification and figure-text linkage achieving high precision and recall rates.</p>
+<h2 id="validation-process">Validation Process<a class="headerlink" href="#validation-process" title="Permanent link">&para;</a></h2>
+<p>To validate data integrity, we applied a stratified manual validation procedure.</p>
+<p>From each article included in a dataset, we randomly selected approximately 20% of entries and reviewed them manually against the original source materials — including PDFs, figures, and supplementary tables.<br />
+At least one entry from each article was always validated, even if 20% resulted in less than one.</p>
+<p>Errors were detected manually and could include:<br />
+– typos or transcription mistakes,<br />
+– structural inconsistencies (e.g. incorrect SMILES),<br />
+– unit mismatches,<br />
+– or curator-inferred values not explicitly stated in the article.</p>
+<p>Rather than rigidly classifying errors, we distinguished between:<br />
+<strong>Generalizable errors</strong> – repeated patterns across entries or articles<br />
+<strong>Isolated errors</strong> – one-off mistakes specific to a single entry</p>
+<p>If even one error was found in the sample from an article, we reviewed all remaining entries from that article, regardless of whether they were in the original sample.<br />
+This helped us uncover patterns not visible during initial sampling and enabled corrections to scale beyond individual entries.</p>
+<p>Even isolated errors could trigger broader review and improvements across the dataset if they indicated hidden patterns.</p>
+<p>For generalizable issues, we formulated simple correction rules:
+- which field was affected,
+- how often it repeated,
+- and the appropriate fix — such as structure replacement, unit normalization, or removal of speculative values.</p>
+<p>All fixes and decisions were documented and shared with the dataset curators.<br />
+Isolated issues were fixed individually.</p>
+<p><strong>The "Eye Drops" and "Co-crystals" datasets were fully reviewed in their entirety due to their small size.</strong></p>
 
 
 

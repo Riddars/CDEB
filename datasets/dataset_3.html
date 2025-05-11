@@ -676,7 +676,7 @@
   
   
   <span class="md-ellipsis">
-    Cytotoxicity
+    Cytotox
     
   </span>
   
@@ -811,15 +811,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#benchmark-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benchmark Results
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -864,7 +855,7 @@
   
   
   <span class="md-ellipsis">
-    Magnetic nanomaterials
+    Nanomag
     
   </span>
   
@@ -947,7 +938,7 @@
   
   
   <span class="md-ellipsis">
-    Benzimidazole antibiotics
+    Benzimidazoles
     
   </span>
   
@@ -970,7 +961,7 @@
   
   
   <span class="md-ellipsis">
-    Oxazolidinone Antibiotics
+    Oxazolidinones
     
   </span>
   
@@ -993,7 +984,7 @@
   
   
   <span class="md-ellipsis">
-    Chelate Complexes
+    Complexes
     
   </span>
   
@@ -1039,7 +1030,7 @@
   
   
   <span class="md-ellipsis">
-    Photostability of Multi-Component Crystals
+    Co-crystals
     
   </span>
   
@@ -1100,8 +1091,6 @@
       
         
       
-        
-      
     
     
     
@@ -1151,29 +1140,6 @@
   
   <span class="md-ellipsis">
     Team
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../about/how_to_cite.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    How to cite
     
   </span>
   
@@ -1285,15 +1251,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#benchmark-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benchmark Results
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1341,136 +1298,179 @@
 </thead>
 <tbody>
 <tr>
+<td>sn</td>
+<td>Internal index of the record</td>
+</tr>
+<tr>
 <td>NP</td>
-<td>Name of the nanoparticle (e.g., Ag, Au, CuO).</td>
+<td>Nanoparticle name (Ag, Au, CuO, etc.)</td>
 </tr>
 <tr>
-<td>Bacteria</td>
-<td>Bacterial strain tested (e.g., <em>Escherichia coli</em>).</td>
+<td>bacteria</td>
+<td>Bacteria species</td>
 </tr>
 <tr>
-<td>ATCC(species)</td>
-<td>Strain identifier (e.g., MTCC 443, ATCC 25922).</td>
+<td>strain</td>
+<td>Strain identifier (e.g., ATCC 25922, MTCC 443)</td>
 </tr>
 <tr>
-<td>NP_Synthesis</td>
-<td>Synthesis method (e.g., chemical synthesis, green synthesis).</td>
+<td>NP_synthesis</td>
+<td>Method of nanoparticle synthesis (e.g., green, chemical)</td>
 </tr>
 <tr>
-<td>Drug</td>
-<td>Name of the antibiotic/drug used in combination.</td>
+<td>drug</td>
+<td>Name of the antibiotic tested</td>
 </tr>
 <tr>
-<td>Drug_dose</td>
-<td>Dosage/concentration of the drug.</td>
+<td>drug_dose_µg_disk</td>
+<td>Dose of drug in disc diffusion assay</td>
 </tr>
 <tr>
-<td>NP_concentration</td>
-<td>Required NP concentration to produce an antibacterial effect.</td>
+<td>NP_concentration_µg_ml</td>
+<td>NP concentration in µg/mL</td>
 </tr>
 <tr>
-<td>NP_size_min(nm)</td>
-<td>Minimum size of nanoparticles (nm).</td>
+<td>NP_size_min_nm</td>
+<td>Minimum NP size in nanometers</td>
 </tr>
 <tr>
-<td>NP_size_max_(nm)</td>
-<td>Maximum size of nanoparticles (nm).</td>
+<td>NP_size_max_nm</td>
+<td>Maximum NP size in nanometers</td>
 </tr>
 <tr>
-<td>NP_size_avg_(nm)</td>
-<td>Average size of nanoparticles (nm).</td>
+<td>NP_size_avg_nm</td>
+<td>Average NP size in nanometers</td>
 </tr>
 <tr>
 <td>shape</td>
-<td>Morphology of the nanoparticles (e.g., spherical).</td>
+<td>Morphology of the NP</td>
 </tr>
 <tr>
 <td>method</td>
-<td>Assay type used (e.g., MIC, disc_diffusion, well_diffusion, etc.).</td>
+<td>Assay method used</td>
 </tr>
 <tr>
-<td>ZOI_drug(mm)_or_Minimal_concentration</td>
-<td>Zone of inhibition (mm) or MIC for the drug alone.</td>
+<td>ZOI_drug_mm_or_MIC _µg_ml</td>
+<td>Zone of inhibition or MIC for drug alone</td>
 </tr>
 <tr>
-<td>error_ZOI_drug(mm)_or_Minimal_concentration</td>
-<td>Error or standard deviation for drug-only measurement.</td>
+<td>error_ZOI_drug_mm_or_MIC_µg_ml</td>
+<td>Standard deviation for <code>ZOI_drug_mm_or_MIC</code></td>
 </tr>
 <tr>
-<td>ZOI_NP_or_MC_NP</td>
-<td>Zone of inhibition or MIC for the nanoparticle alone.</td>
+<td>ZOI_NP_mm_or_MIC_np_µg_ml</td>
+<td>ZOI or MIC for NP alone</td>
 </tr>
 <tr>
-<td>error_ZOI_NP_or_MC_NP</td>
-<td>Error or standard deviation for NP-only measurement.</td>
+<td>error_ZOI_NP_mm_or_MIC_np_µg_ml</td>
+<td>Standard deviation for NP assay</td>
 </tr>
 <tr>
-<td>ZOI_drug_NP_or_MIC_drug_NP</td>
-<td>Zone of inhibition or MIC for the drug + NP combination.</td>
+<td>ZOI_drug_NP_mm_or_MIC_drug_NP_µg_ml</td>
+<td>ZOI or MIC for drug + NP</td>
 </tr>
 <tr>
-<td>error_ZOI_drug_NP_or_MIC_drug_NP</td>
-<td>Error or standard deviation for the combination.</td>
+<td>error_ZOI_drug_NP_mm_or_MIC_drug_NP_µg_ml</td>
+<td>Standard deviation for combination</td>
 </tr>
 <tr>
 <td>fold_increase_in_antibacterial_activity</td>
-<td>Enhancement in antibacterial activity due to synergy (fold change).</td>
+<td>Fold increase in combination efficiency</td>
 </tr>
 <tr>
-<td>Zeta_potential(mV)</td>
-<td>Surface charge of the nanoparticle (mV).</td>
+<td>zeta_potential_mV</td>
+<td>Surface charge in mV</td>
 </tr>
 <tr>
 <td>MDR</td>
-<td>Multidrug-resistant strain (R = Resistant).</td>
+<td>Indicates multidrug resistance (R = resistant)</td>
 </tr>
 <tr>
 <td>FIC</td>
-<td>Fractional Inhibitory Concentration index.</td>
+<td>Fractional Inhibitory Concentration index</td>
 </tr>
 <tr>
-<td>Effect</td>
-<td>Type of interaction (e.g., synergistic, additive).</td>
+<td>effect</td>
+<td>Type of synergy (synergistic, additive…)</td>
 </tr>
 <tr>
 <td>reference</td>
-<td>Citation or URL to the original publication.</td>
+<td>Full citation or source</td>
 </tr>
 <tr>
 <td>doi</td>
-<td>Digital Object Identifier (DOI) of the article.</td>
+<td>Digital Object Identifier</td>
 </tr>
 <tr>
 <td>article_list</td>
-<td>Internal article identifier in the dataset.</td>
+<td>Internal article identifier</td>
 </tr>
 <tr>
-<td>time_(hr)</td>
-<td>Duration of exposure (in hours).</td>
+<td>time_hr</td>
+<td>Time of exposure in hours</td>
 </tr>
 <tr>
-<td>Coating_with_antimicrobial_peptide/polymers</td>
-<td>Surface modification with peptides or polymers (if used).</td>
+<td>coating_with_antimicrobial_peptide_polymers</td>
+<td>Presence or name of coating</td>
 </tr>
 <tr>
 <td>combined_MIC</td>
-<td>Combined MIC of NP and peptide/polymer.</td>
+<td>MIC value of the full system (NP + coating)</td>
 </tr>
 <tr>
 <td>peptide_MIC</td>
-<td>MIC of antimicrobial peptide alone.</td>
+<td>MIC value of peptide alone</td>
 </tr>
 <tr>
-<td>viability</td>
-<td>Bacterial viability (%) post-treatment.</td>
+<td>viability_%</td>
+<td>Viability of bacterial sample</td>
 </tr>
 <tr>
 <td>viability_error</td>
-<td>Error or standard deviation for viability.</td>
+<td>Associated error for viability</td>
+</tr>
+<tr>
+<td>journal_name</td>
+<td>Name of source journal</td>
+</tr>
+<tr>
+<td>publisher</td>
+<td>Publisher</td>
+</tr>
+<tr>
+<td>year</td>
+<td>Year of publication</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Title of the article</td>
+</tr>
+<tr>
+<td>journal_is_oa</td>
+<td>Whether the journal is Open Access</td>
+</tr>
+<tr>
+<td>is_oa</td>
+<td>Whether the article is OA</td>
+</tr>
+<tr>
+<td>oa_status</td>
+<td>OA level (green, hybrid)</td>
+</tr>
+<tr>
+<td>pdf</td>
+<td>PDF filename in archive</td>
+</tr>
+<tr>
+<td>access</td>
+<td>1 = OA, 0 = closed</td>
+</tr>
+<tr>
+<td>---</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<hr />
 <h2 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1482,31 +1482,39 @@
 <tbody>
 <tr>
 <td>journal_name</td>
-<td>Name of the publishing journal.</td>
+<td>Journal name</td>
 </tr>
 <tr>
 <td>publisher</td>
-<td>Publisher of the article.</td>
+<td>Publisher</td>
 </tr>
 <tr>
 <td>year</td>
-<td>Year of publication.</td>
+<td>Year of publication</td>
 </tr>
 <tr>
 <td>title</td>
-<td>Title of the article.</td>
+<td>Article title</td>
 </tr>
 <tr>
 <td>journal_is_oa</td>
-<td>Journal is Open Access (TRUE/FALSE).</td>
+<td>Whether the journal is Open Access</td>
 </tr>
 <tr>
 <td>is_oa</td>
-<td>Article is Open Access (TRUE/FALSE).</td>
+<td>Whether the article is Open Access</td>
 </tr>
 <tr>
 <td>oa_status</td>
-<td>Open Access status (e.g., green, closed).</td>
+<td>Type of OA (green, hybrid, closed)</td>
+</tr>
+<tr>
+<td>pdf</td>
+<td>PDF filename</td>
+</tr>
+<tr>
+<td>access</td>
+<td>1 = OA, 0 = closed</td>
 </tr>
 </tbody>
 </table>
@@ -1555,9 +1563,6 @@
 <li><code>has_mistake_in_metadata</code>  </li>
 <li><code>entry_status</code></li>
 </ul>
-<hr />
-<h2 id="benchmark-results">Benchmark Results<a class="headerlink" href="#benchmark-results" title="Permanent link">&para;</a></h2>
-<p>Coming soon.</p>
 <hr />
 
 

@@ -22,7 +22,7 @@
     
     
       
-        <title>Magnetic nanomaterials - ChemX</title>
+        <title>Nanomag - ChemX</title>
       
     
     
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Magnetic nanomaterials
+              Nanomag
             
           </span>
         </div>
@@ -676,7 +676,7 @@
   
   
   <span class="md-ellipsis">
-    Cytotoxicity
+    Cytotox
     
   </span>
   
@@ -777,7 +777,7 @@
   
   
   <span class="md-ellipsis">
-    Magnetic nanomaterials
+    Nanomag
     
   </span>
   
@@ -790,7 +790,7 @@
   
   
   <span class="md-ellipsis">
-    Magnetic nanomaterials
+    Nanomag
     
   </span>
   
@@ -852,15 +852,6 @@
   <a href="#validation-results" class="md-nav__link">
     <span class="md-ellipsis">
       Validation Results
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benchmark-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benchmark Results
     </span>
   </a>
   
@@ -947,7 +938,7 @@
   
   
   <span class="md-ellipsis">
-    Benzimidazole antibiotics
+    Benzimidazoles
     
   </span>
   
@@ -970,7 +961,7 @@
   
   
   <span class="md-ellipsis">
-    Oxazolidinone Antibiotics
+    Oxazolidinones
     
   </span>
   
@@ -993,7 +984,7 @@
   
   
   <span class="md-ellipsis">
-    Chelate Complexes
+    Complexes
     
   </span>
   
@@ -1039,7 +1030,7 @@
   
   
   <span class="md-ellipsis">
-    Photostability of Multi-Component Crystals
+    Co-crystals
     
   </span>
   
@@ -1100,8 +1091,6 @@
       
         
       
-        
-      
     
     
     
@@ -1151,29 +1140,6 @@
   
   <span class="md-ellipsis">
     Team
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../about/how_to_cite.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    How to cite
     
   </span>
   
@@ -1285,15 +1251,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#benchmark-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benchmark Results
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1324,8 +1281,8 @@
 <p><strong>Title:</strong> Magnetic Nanomaterials<br />
 <strong>Description:</strong><br />
 The dataset contains comprehensive information about magnetic nanoparticles, including core-shell structures and their magnetic properties. It combines three distinct datasets: two focusing on MRI and hyperthermia applications (from Pasha Kim), and one dedicated to exchange bias phenomena.</p>
-<p><strong>Total number of records:</strong> 2579<br />
-<strong>Number of features (columns):</strong> 64<br />
+<p><strong>Total number of records:</strong> 2578<br />
+<strong>Number of features (columns):</strong> 39<br />
 <strong>Data type:</strong> Mixed<br />
 <strong>Application:</strong> Nanomaterials<br />
 <strong>Automatic validation:</strong> Yes</p>
@@ -1362,7 +1319,7 @@ The dataset contains comprehensive information about magnetic nanoparticles, inc
 <li>MRI-related properties</li>
 <li>Hyperthermia characteristics</li>
 </ol>
-<h3 id="column-descriptions">Column Descriptions<a class="headerlink" href="#column-descriptions" title="Permanent link">&para;</a></h3>
+<h3 id="magnetic-nanomaterials-column-descriptions">Magnetic Nanomaterials – Column Descriptions<a class="headerlink" href="#magnetic-nanomaterials-column-descriptions" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1374,33 +1331,38 @@ The dataset contains comprehensive information about magnetic nanoparticles, inc
 <tbody>
 <tr>
 <td>Composition</td>
-<td>normalized_core</td>
-<td>Normalized core composition</td>
+<td>name</td>
+<td>Sample or material name (if given)</td>
 </tr>
 <tr>
 <td></td>
-<td>normalized_shell</td>
-<td>Normalized shell composition</td>
+<td>np_core</td>
+<td>Material of the nanoparticle core</td>
+</tr>
+<tr>
+<td></td>
+<td>np_shell</td>
+<td>Material of the shell</td>
 </tr>
 <tr>
 <td></td>
 <td>np_shell_2</td>
-<td>Second shell composition (if present)</td>
+<td>Second shell layer (optional)</td>
 </tr>
 <tr>
 <td></td>
-<td>np_shell_3</td>
-<td>Third shell composition (if present)</td>
+<td>core_shell_formula</td>
+<td>Combined formula for core-shell system</td>
 </tr>
 <tr>
-<td>Size &amp; Structure</td>
+<td>Structural Properties</td>
 <td>np_hydro_size</td>
 <td>Hydrodynamic size (nm)</td>
 </tr>
 <tr>
 <td></td>
 <td>xrd_scherrer_size</td>
-<td>Crystallite size from Scherrer equation</td>
+<td>Size from XRD using Scherrer equation</td>
 </tr>
 <tr>
 <td></td>
@@ -1408,59 +1370,168 @@ The dataset contains comprehensive information about magnetic nanoparticles, inc
 <td>Size from electron microscopy</td>
 </tr>
 <tr>
-<td>Magnetic Properties</td>
-<td>squid_h_min</td>
-<td>Minimum magnetic field in SQUID measurements</td>
+<td></td>
+<td>space_group_core</td>
+<td>Core crystallographic space group</td>
 </tr>
 <tr>
 <td></td>
-<td>squid_h_max</td>
-<td>Maximum magnetic field in SQUID measurements</td>
-</tr>
-<tr>
-<td></td>
-<td>squid_sat_mag</td>
-<td>Saturation magnetization</td>
-</tr>
-<tr>
-<td></td>
-<td>exchange_bias_shift</td>
-<td>Exchange bias field shift (Oe)</td>
-</tr>
-<tr>
-<td>Thermal Properties</td>
-<td>blocking_temperature</td>
-<td>Blocking temperature (K)</td>
-</tr>
-<tr>
-<td></td>
-<td>curie_temperature</td>
-<td>Curie temperature (K)</td>
-</tr>
-<tr>
-<td>Characterization</td>
-<td>emic_exp_type</td>
-<td>Type of electron microscopy experiment</td>
+<td>space_group_shell</td>
+<td>Shell crystallographic space group</td>
 </tr>
 <tr>
 <td></td>
 <td>xrd_crystallinity</td>
-<td>Crystallinity status</td>
+<td>Crystallinity status based on XRD</td>
+</tr>
+<tr>
+<td>Magnetic Properties</td>
+<td>squid_h_max</td>
+<td>Max magnetic field in SQUID (kOe)</td>
 </tr>
 <tr>
 <td></td>
-<td>space_group_core</td>
-<td>Space group of core material</td>
+<td>fc_field_T</td>
+<td>Field-cooled field strength (T)</td>
+</tr>
+<tr>
+<td></td>
+<td>squid_temperature</td>
+<td>SQUID measurement temperature (K)</td>
+</tr>
+<tr>
+<td></td>
+<td>squid_sat_mag</td>
+<td>Saturation magnetization (emu/g)</td>
+</tr>
+<tr>
+<td></td>
+<td>coercivity</td>
+<td>Coercive field strength (kOe)</td>
+</tr>
+<tr>
+<td></td>
+<td>squid_rem_mag</td>
+<td>Remanent magnetization (emu/g)</td>
+</tr>
+<tr>
+<td></td>
+<td>exchange_bias_shift_Oe</td>
+<td>Exchange bias field shift (Oe)</td>
+</tr>
+<tr>
+<td></td>
+<td>vertical_loop_shift_M_vsl_emu_g</td>
+<td>Vertical loop shift (emu/g)</td>
+</tr>
+<tr>
+<td></td>
+<td>hc_kOe</td>
+<td>Coercive field from hysteresis loop (kOe)</td>
+</tr>
+<tr>
+<td>MRI / Hyperthermia</td>
+<td>htherm_sar</td>
+<td>Specific absorption rate (W/g)</td>
+</tr>
+<tr>
+<td></td>
+<td>mri_r1</td>
+<td>MRI relaxation rate r1 (mM⁻¹·s⁻¹)</td>
+</tr>
+<tr>
+<td></td>
+<td>mri_r2</td>
+<td>MRI relaxation rate r2 (mM⁻¹·s⁻¹)</td>
+</tr>
+<tr>
+<td>Experimental Details</td>
+<td>zfc_h_meas</td>
+<td>Field used for ZFC measurement (kOe)</td>
+</tr>
+<tr>
+<td></td>
+<td>instrument</td>
+<td>Instrument used for measurement (e.g., SQUID)</td>
+</tr>
+<tr>
+<td>Metadata</td>
+<td>doi</td>
+<td>DOI of the publication</td>
+</tr>
+<tr>
+<td></td>
+<td>title</td>
+<td>Article title</td>
+</tr>
+<tr>
+<td></td>
+<td>journal</td>
+<td>Journal name</td>
+</tr>
+<tr>
+<td></td>
+<td>publisher</td>
+<td>Publisher name</td>
+</tr>
+<tr>
+<td></td>
+<td>year</td>
+<td>Year of publication</td>
+</tr>
+<tr>
+<td></td>
+<td>pdf</td>
+<td>Filename of the associated PDF</td>
+</tr>
+<tr>
+<td></td>
+<td>access</td>
+<td>Access status: 1 = OA, 0 = closed</td>
+</tr>
+<tr>
+<td>Validation</td>
+<td>verification required</td>
+<td>Whether manual verification is needed</td>
+</tr>
+<tr>
+<td></td>
+<td>verified_by</td>
+<td>Name of validator</td>
+</tr>
+<tr>
+<td></td>
+<td>verification_date</td>
+<td>Date of verification</td>
+</tr>
+<tr>
+<td></td>
+<td>has_mistake_in_matadata</td>
+<td>Whether metadata has a mistake</td>
+</tr>
+<tr>
+<td></td>
+<td>comment</td>
+<td>Notes by validator</td>
+</tr>
+<tr>
+<td>Internal IDs</td>
+<td>article_name_folder</td>
+<td>Internal folder name for the article</td>
+</tr>
+<tr>
+<td></td>
+<td>supp_info_name_folder</td>
+<td>Supplementary info folder name</td>
 </tr>
 </tbody>
 </table>
-<p>[<em>Note: This is a subset of columns. Full list contains 64 columns</em>]</p>
 <hr />
 <h2 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th><strong>Column Name</strong></th>
+<th><strong>Field</strong></th>
 <th><strong>Description</strong></th>
 </tr>
 </thead>
@@ -1470,36 +1541,28 @@ The dataset contains comprehensive information about magnetic nanoparticles, inc
 <td>Digital Object Identifier</td>
 </tr>
 <tr>
-<td>journal_name</td>
-<td>Name of the publication journal</td>
+<td>title</td>
+<td>Title of the article</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Name of the journal</td>
 </tr>
 <tr>
 <td>publisher</td>
-<td>Publisher name</td>
+<td>Publisher’s name</td>
 </tr>
 <tr>
 <td>year</td>
-<td>Publication year</td>
+<td>Year published</td>
 </tr>
 <tr>
-<td>title</td>
-<td>Article title</td>
+<td>pdf</td>
+<td>PDF file name in the archive</td>
 </tr>
 <tr>
 <td>access</td>
-<td>Access type (0 - closed, 1 - open)</td>
-</tr>
-<tr>
-<td>verification_required</td>
-<td>Indicates if verification is needed</td>
-</tr>
-<tr>
-<td>verified_by</td>
-<td>Name of validator</td>
-</tr>
-<tr>
-<td>verification_date</td>
-<td>Date of verification</td>
+<td>1 = open access, 0 = closed</td>
 </tr>
 </tbody>
 </table>
@@ -1546,9 +1609,6 @@ The dataset contains comprehensive information about magnetic nanoparticles, inc
 - Metadata accuracy (<code>has_mistake_in_metadata</code>)
 - Verification status tracking
 - Validator assignment and dating</p>
-<hr />
-<h2 id="benchmark-results">Benchmark Results<a class="headerlink" href="#benchmark-results" title="Permanent link">&para;</a></h2>
-<p>Coming soon.</p>
 <hr />
 
 
@@ -1604,13 +1664,13 @@ The dataset contains comprehensive information about magnetic nanoparticles, inc
         
         
           
-          <a href="dataset_5.html" class="md-footer__link md-footer__link--next" aria-label="Next: Benzimidazole antibiotics">
+          <a href="dataset_5.html" class="md-footer__link md-footer__link--next" aria-label="Next: Benzimidazoles">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Benzimidazole antibiotics
+                Benzimidazoles
               </div>
             </div>
             <div class="md-footer__button md-icon">

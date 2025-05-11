@@ -676,7 +676,7 @@
   
   
   <span class="md-ellipsis">
-    Cytotoxicity
+    Cytotox
     
   </span>
   
@@ -788,15 +788,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#benchmark-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benchmark Results
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -864,7 +855,7 @@
   
   
   <span class="md-ellipsis">
-    Magnetic nanomaterials
+    Nanomag
     
   </span>
   
@@ -947,7 +938,7 @@
   
   
   <span class="md-ellipsis">
-    Benzimidazole antibiotics
+    Benzimidazoles
     
   </span>
   
@@ -970,7 +961,7 @@
   
   
   <span class="md-ellipsis">
-    Oxazolidinone Antibiotics
+    Oxazolidinones
     
   </span>
   
@@ -993,7 +984,7 @@
   
   
   <span class="md-ellipsis">
-    Chelate Complexes
+    Complexes
     
   </span>
   
@@ -1039,7 +1030,7 @@
   
   
   <span class="md-ellipsis">
-    Photostability of Multi-Component Crystals
+    Co-crystals
     
   </span>
   
@@ -1100,8 +1091,6 @@
       
         
       
-        
-      
     
     
     
@@ -1151,29 +1140,6 @@
   
   <span class="md-ellipsis">
     Team
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../about/how_to_cite.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    How to cite
     
   </span>
   
@@ -1285,15 +1251,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#benchmark-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benchmark Results
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1323,8 +1280,8 @@
 <h2 id="original-data">Original Data<a class="headerlink" href="#original-data" title="Permanent link">&para;</a></h2>
 <p><strong>Title:</strong> SelTox dataset – Toxicity of inorganic nanoparticles in various normal and pathogenic bacterial strains<br />
 <strong>Description:</strong> The dataset contains experimental information on the toxicity of inorganic nanoparticles tested against different bacterial strains, including both normal and multidrug-resistant (MDR) types.<br />
-<strong>Total number of records:</strong> 3286<br />
-<strong>Number of features (columns):</strong> 30<br />
+<strong>Total number of records:</strong> 3244<br />
+<strong>Number of features (columns):</strong> 36<br />
 <strong>Data type:</strong> Mixed<br />
 <strong>Application:</strong> Nanomaterials<br />
 <strong>Automatic validation:</strong> Yes</p>
@@ -1340,20 +1297,24 @@
 </thead>
 <tbody>
 <tr>
+<td>sn</td>
+<td>Internal index for entries.</td>
+</tr>
+<tr>
 <td>np</td>
 <td>Name of the nanoparticle (e.g., Ag, Au, ZnO).</td>
 </tr>
 <tr>
 <td>coating</td>
-<td>Surface coating/modification of the nanoparticle (if any: 1 = Yes, 0 = No).</td>
+<td>Surface coating or modification (1 = presence, 0 = none).</td>
 </tr>
 <tr>
 <td>bacteria</td>
-<td>Bacterial strain tested (e.g., <em>Enterococcus faecalis</em>, <em>Escherichia coli</em>).</td>
+<td>Name of the tested bacterial strain.</td>
 </tr>
 <tr>
 <td>mdr</td>
-<td>Indicates multidrug-resistant strain (1 = Yes, 0 = No).</td>
+<td>Indicator for multidrug-resistant strain (1 = MDR, 0 = non-MDR).</td>
 </tr>
 <tr>
 <td>strain</td>
@@ -1361,87 +1322,95 @@
 </tr>
 <tr>
 <td>np_synthesis</td>
-<td>Synthesis method (e.g., green_synthesis, chemical synthesis).</td>
+<td>Synthesis method of the nanoparticle.</td>
 </tr>
 <tr>
 <td>method</td>
-<td>Assay type (e.g., MIC, ZOI).</td>
+<td>Assay type used (e.g., MIC, ZOI).</td>
 </tr>
 <tr>
-<td>MIC_NP</td>
-<td>Minimum Inhibitory Concentration of the nanoparticle.</td>
+<td>mic_np_µg_ml</td>
+<td>MIC value in µg/mL for the nanoparticle.</td>
 </tr>
 <tr>
 <td>concentration</td>
-<td>Concentration of nanoparticle used for ZOI measurement.</td>
+<td>Concentration used for ZOI measurement.</td>
 </tr>
 <tr>
-<td>zoi_np</td>
-<td>Zone of Inhibition (in mm) for the nanoparticle alone.</td>
+<td>zoi_np_mm</td>
+<td>ZOI (Zone of Inhibition) in millimeters.</td>
 </tr>
 <tr>
-<td>np_size_min (nm)</td>
-<td>Minimum particle size (nm).</td>
+<td>np_size_min_nm</td>
+<td>Minimum nanoparticle size (nm).</td>
 </tr>
 <tr>
-<td>np_size_max (nm)</td>
-<td>Maximum particle size (nm).</td>
+<td>np_size_max_nm</td>
+<td>Maximum nanoparticle size (nm).</td>
 </tr>
 <tr>
-<td>np_size_avg (nm)</td>
-<td>Average particle size (nm).</td>
+<td>np_size_avg_nm</td>
+<td>Average nanoparticle size (nm).</td>
 </tr>
 <tr>
 <td>shape</td>
-<td>Particle morphology (e.g., spherical, rod-shaped).</td>
+<td>Morphology of the nanoparticle (e.g., spherical, rod).</td>
 </tr>
 <tr>
-<td>time_set</td>
-<td>Duration of the experiment (in hours).</td>
+<td>time_set_hours</td>
+<td>Duration of the antibacterial assay in hours.</td>
 </tr>
 <tr>
-<td>zeta_potential</td>
-<td>Zeta potential (mV); blank if not measured.</td>
+<td>zeta_potential_mV</td>
+<td>Zeta potential (in mV); blank if not reported.</td>
+</tr>
+<tr>
+<td>solvent_for_extract</td>
+<td>Solvent used in green synthesis (if applicable).</td>
+</tr>
+<tr>
+<td>temperature_for_extract_C</td>
+<td>Temperature for extract preparation (°C).</td>
+</tr>
+<tr>
+<td>duration_preparing_extract_min</td>
+<td>Duration (in minutes) of extract preparation.</td>
+</tr>
+<tr>
+<td>precursor_of_np</td>
+<td>Chemical precursor used for nanoparticle synthesis (e.g., AgNO₃).</td>
+</tr>
+<tr>
+<td>concentration_of_precursor_mM</td>
+<td>Concentration of precursor in millimolar.</td>
+</tr>
+<tr>
+<td>hydrodynamic_diameter_nm</td>
+<td>Hydrodynamic diameter in nanometers.</td>
+</tr>
+<tr>
+<td>ph_during_synthesis</td>
+<td>pH during nanoparticle synthesis.</td>
 </tr>
 <tr>
 <td>reference</td>
-<td>Reference to study (URL or citation).</td>
+<td>External source or citation URL.</td>
 </tr>
 <tr>
 <td>doi</td>
-<td>Digital Object Identifier of the article.</td>
+<td>DOI of the publication.</td>
 </tr>
 <tr>
 <td>article_list</td>
-<td>Internal article identifier in dataset.</td>
+<td>Article ID in dataset.</td>
 </tr>
 <tr>
-<td>Solvent for extract</td>
-<td>Solvent used in green synthesis (e.g., water, ethanol).</td>
+<td>pdf</td>
+<td>Filename of the PDF in archive for reference checking.</td>
 </tr>
 <tr>
-<td>Temperature for extract, C</td>
-<td>Temperature of extract preparation (°C).</td>
-</tr>
-<tr>
-<td>Duration preparing extract, min</td>
-<td>Duration of extract preparation (minutes).</td>
-</tr>
-<tr>
-<td>Precursor of NP</td>
-<td>Chemical precursor used (e.g., AgNO₃).</td>
-</tr>
-<tr>
-<td>Concentration of precursor (mM)</td>
-<td>Molar concentration of precursor.</td>
-</tr>
-<tr>
-<td>hydrodynamic diameter</td>
-<td>Hydrodynamic size in solution (if measured).</td>
-</tr>
-<tr>
-<td>pH during synthesis</td>
-<td>pH value during synthesis (if reported).</td>
+<td>access</td>
+<td>Access status (1 = open access, 0 = closed access).</td>
 </tr>
 </tbody>
 </table>
@@ -1457,11 +1426,11 @@
 <tbody>
 <tr>
 <td>journal_name</td>
-<td>Name of the publishing journal.</td>
+<td>Name of the journal.</td>
 </tr>
 <tr>
 <td>publisher</td>
-<td>Publisher of the article.</td>
+<td>Name of the publisher.</td>
 </tr>
 <tr>
 <td>year</td>
@@ -1473,15 +1442,23 @@
 </tr>
 <tr>
 <td>journal_is_oa</td>
-<td>Journal is Open Access (TRUE/FALSE).</td>
+<td>Whether the journal is Open Access (<code>True</code> / <code>False</code>).</td>
 </tr>
 <tr>
 <td>is_oa</td>
-<td>Article is Open Access (TRUE/FALSE).</td>
+<td>Whether the article itself is Open Access (<code>True</code> / <code>False</code>).</td>
 </tr>
 <tr>
 <td>oa_status</td>
-<td>Open Access status (e.g., green, hybrid, closed).</td>
+<td>Open Access status (e.g., green, gold, hybrid, closed).</td>
+</tr>
+<tr>
+<td>pdf</td>
+<td>Name of the PDF file in the dataset.</td>
+</tr>
+<tr>
+<td>access</td>
+<td>Access status code (1 = open, 0 = closed).</td>
 </tr>
 </tbody>
 </table>
@@ -1531,9 +1508,6 @@
 <li>All validation entries include timestamp and verifier name</li>
 </ul>
 <hr />
-<h2 id="benchmark-results">Benchmark Results<a class="headerlink" href="#benchmark-results" title="Permanent link">&para;</a></h2>
-<p>Coming soon.</p>
-<hr />
 
 
 
@@ -1571,7 +1545,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="dataset_1.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cytotoxicity">
+          <a href="dataset_1.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cytotox">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1581,7 +1555,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Cytotoxicity
+                Cytotox
               </div>
             </div>
           </a>

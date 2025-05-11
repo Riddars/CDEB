@@ -22,7 +22,7 @@
     
     
       
-        <title>Oxazolidinone Antibiotics - ChemX</title>
+        <title>Oxazolidinones - ChemX</title>
       
     
     
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Oxazolidinone Antibiotics
+              Oxazolidinones
             
           </span>
         </div>
@@ -674,7 +674,7 @@
   
   
   <span class="md-ellipsis">
-    Cytotoxicity
+    Cytotox
     
   </span>
   
@@ -766,7 +766,7 @@
   
   
   <span class="md-ellipsis">
-    Magnetic nanomaterials
+    Nanomag
     
   </span>
   
@@ -851,7 +851,7 @@
   
   
   <span class="md-ellipsis">
-    Benzimidazole antibiotics
+    Benzimidazoles
     
   </span>
   
@@ -883,7 +883,7 @@
   
   
   <span class="md-ellipsis">
-    Oxazolidinone Antibiotics
+    Oxazolidinones
     
   </span>
   
@@ -896,7 +896,7 @@
   
   
   <span class="md-ellipsis">
-    Oxazolidinone Antibiotics
+    Oxazolidinones
     
   </span>
   
@@ -963,15 +963,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#benchmark-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benchmark Results
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -993,7 +984,7 @@
   
   
   <span class="md-ellipsis">
-    Chelate Complexes
+    Complexes
     
   </span>
   
@@ -1039,7 +1030,7 @@
   
   
   <span class="md-ellipsis">
-    Photostability of Multi-Component Crystals
+    Co-crystals
     
   </span>
   
@@ -1100,8 +1091,6 @@
       
         
       
-        
-      
     
     
     
@@ -1151,29 +1140,6 @@
   
   <span class="md-ellipsis">
     Team
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../about/how_to_cite.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    How to cite
     
   </span>
   
@@ -1285,15 +1251,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#benchmark-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benchmark Results
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1325,8 +1282,8 @@
 Oxazolidinone antibiotics</p>
 <p><strong>Description:</strong><br />
 The dataset contains oxazolidinone antibiotics represented in SMILES format, along with their corresponding inhibitory concentrations (MIC or pMIC) against various bacterial strains. The data was extracted from scientific publications and includes detailed metadata about each measurement's origin, such as source (text, table, figure, or image) and exact location in the article (page, section, subsection).</p>
-<p><strong>Total number of records:</strong> 3103<br />
-<strong>Number of features (columns):</strong> 34<br />
+<p><strong>Total number of records:</strong> 2923<br />
+<strong>Number of features (columns):</strong> 32<br />
 <strong>Data type:</strong> Mixed (text, numeric, chemical structures)<br />
 <strong>Application:</strong> Extraction of chemical structures and biological activity data for QSAR modeling and analysis of antibiotic effectiveness<br />
 <strong>Automatic validation:</strong> Yes</p>
@@ -1343,11 +1300,15 @@ The dataset contains oxazolidinone antibiotics represented in SMILES format, alo
 <tbody>
 <tr>
 <td>smiles</td>
-<td>Extracted chemical structure in isomeric SMILES format</td>
+<td>Isomeric SMILES representation of the compound</td>
+</tr>
+<tr>
+<td>pdf</td>
+<td>Name of PDF file where data was extracted from</td>
 </tr>
 <tr>
 <td>doi</td>
-<td>DOI of the source article</td>
+<td>Digital Object Identifier of the source article</td>
 </tr>
 <tr>
 <td>title</td>
@@ -1355,115 +1316,115 @@ The dataset contains oxazolidinone antibiotics represented in SMILES format, alo
 </tr>
 <tr>
 <td>publisher</td>
-<td>Publisher of the article</td>
+<td>Journal publisher</td>
 </tr>
 <tr>
 <td>year</td>
-<td>Publication year</td>
+<td>Year of publication</td>
 </tr>
 <tr>
 <td>access</td>
-<td>Access type (1 = open access, 0 = not open access)</td>
+<td>Access status (1 = open, 0 = closed)</td>
 </tr>
 <tr>
 <td>compound_id</td>
-<td>ID of the chemical compound in the article</td>
+<td>Compound ID as used in the article</td>
 </tr>
 <tr>
 <td>target_type</td>
-<td>Extracted target type (e.g., MIC, pMIC)</td>
+<td>Type of measurement (e.g., MIC, pMIC)</td>
 </tr>
 <tr>
 <td>target_relation</td>
-<td>Symbol preceding the target value (e.g., =, &gt;, &lt;)</td>
+<td>Inequality symbol (e.g., =, &gt;, &lt;)</td>
 </tr>
 <tr>
 <td>target_value</td>
-<td>Numerical value of the target measurement</td>
+<td>Numerical target value</td>
 </tr>
 <tr>
 <td>target_units</td>
-<td>Units of the target value (e.g., mol/l)</td>
+<td>Units of target value (e.g., µg/mL, mol/L)</td>
 </tr>
 <tr>
 <td>bacteria</td>
-<td>Bacterial species related to the measurement</td>
+<td>Raw bacterial name</td>
 </tr>
 <tr>
 <td>bacteria_name_unified</td>
-<td>Unified name of the bacteria (normalized nomenclature)</td>
+<td>Normalized / unified bacterial name</td>
 </tr>
 <tr>
 <td>bacteria_info</td>
-<td>Additional information about the bacterial strain</td>
+<td>Additional strain/bacteria-related info</td>
 </tr>
 <tr>
 <td>page_bacteria</td>
-<td>Page number where the bacterial name is found in the article</td>
+<td>Page number where bacteria is reported</td>
 </tr>
 <tr>
 <td>origin_bacteria</td>
-<td>Source of the bacterial name (e.g., table, figure, text)</td>
+<td>Source of bacteria (text, table, fig, image)</td>
 </tr>
 <tr>
 <td>section_bacteria</td>
-<td>Section of the article where the bacteria is mentioned (if origin is text)</td>
+<td>Section of article (if applicable)</td>
 </tr>
 <tr>
 <td>subsection_bacteria</td>
-<td>Subsection of the article (if origin is text)</td>
+<td>Subsection of article (if applicable)</td>
 </tr>
 <tr>
 <td>page_target</td>
-<td>Page number where the target value is found</td>
+<td>Page of the article where target value is found</td>
 </tr>
 <tr>
 <td>origin_target</td>
-<td>Source of the target value (e.g., table, figure, text)</td>
+<td>Source of target value (table, text, image)</td>
 </tr>
 <tr>
 <td>section_target</td>
-<td>Section of the article where the target is mentioned (if origin is text)</td>
+<td>Section in the article for target (if text)</td>
 </tr>
 <tr>
 <td>subsection_target</td>
-<td>Subsection of the article (if origin is text)</td>
+<td>Subsection in the article for target</td>
 </tr>
 <tr>
 <td>column_prop</td>
-<td>Not specified, possibly related to table column (empty in provided rows)</td>
+<td>Table column index or value (optional)</td>
 </tr>
 <tr>
 <td>line_prop</td>
-<td>Not specified, possibly related to table row (empty in provided rows)</td>
+<td>Table row index or value (optional)</td>
 </tr>
 <tr>
 <td>page_scaffold</td>
-<td>Page number of the scaffold or full structure in the article</td>
+<td>Page with scaffold or full molecule</td>
 </tr>
 <tr>
 <td>origin_scaffold</td>
-<td>Source of the scaffold (e.g., table, figure, image)</td>
+<td>Origin of scaffold (table, figure, image)</td>
 </tr>
 <tr>
 <td>section_scaffold</td>
-<td>Section of the article for scaffold (if origin is image)</td>
+<td>Section for scaffold</td>
 </tr>
 <tr>
 <td>subsection_scaffold</td>
-<td>Subsection of the article for scaffold (if applicable)</td>
+<td>Subsection for scaffold</td>
 </tr>
 <tr>
 <td>page_residue</td>
-<td>Page number of substituents for the scaffold</td>
+<td>Page for substituent structures</td>
 </tr>
 <tr>
 <td>origin_residue</td>
-<td>Source of the substituents (e.g., table, figure, image)</td>
+<td>Origin of residue structures</td>
 </tr>
 <tr>
 <td>section_residue</td>
-<td>Section of the article for substituents (if origin is image)</td>
+<td>Section of article for substituent structures</td>
 </tr>
 </tbody>
 </table>
@@ -1478,24 +1439,28 @@ The dataset contains oxazolidinone antibiotics represented in SMILES format, alo
 </thead>
 <tbody>
 <tr>
-<td>verification_required</td>
-<td>Whether the record required manual verification</td>
+<td>doi</td>
+<td>DOI of the source article</td>
 </tr>
 <tr>
-<td>verified_by</td>
-<td>Name of the person who verified the data</td>
+<td>title</td>
+<td>Title of the article</td>
 </tr>
 <tr>
-<td>verification_date</td>
-<td>Date when the verification was completed</td>
+<td>publisher</td>
+<td>Publisher name</td>
 </tr>
 <tr>
-<td>has_mistake_in_data</td>
-<td>Indicates if the chemical/biological data had a mistake</td>
+<td>year</td>
+<td>Year of publication</td>
 </tr>
 <tr>
-<td>has_mistake_in_matadata</td>
-<td>Indicates if the metadata had a mistake</td>
+<td>access</td>
+<td>Open access status (1 = open, 0 = closed)</td>
+</tr>
+<tr>
+<td>pdf</td>
+<td>PDF file name of the article inside the archive</td>
 </tr>
 </tbody>
 </table>
@@ -1522,9 +1487,6 @@ Extraction of chemical structures of antibiotics from the oxazolidinone class an
 - <strong>Section, Subsection</strong>: If the data is extracted from text or image, the section and subsection of the article are specified  </p>
 <hr />
 <h2 id="validation-results">Validation Results<a class="headerlink" href="#validation-results" title="Permanent link">&para;</a></h2>
-<p>Coming soon.</p>
-<hr />
-<h2 id="benchmark-results">Benchmark Results<a class="headerlink" href="#benchmark-results" title="Permanent link">&para;</a></h2>
 <p>Coming soon.</p>
 <hr />
 
@@ -1564,7 +1526,7 @@ Extraction of chemical structures of antibiotics from the oxazolidinone class an
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="dataset_5.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Benzimidazole antibiotics">
+          <a href="dataset_5.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Benzimidazoles">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1574,20 +1536,20 @@ Extraction of chemical structures of antibiotics from the oxazolidinone class an
                 Previous
               </span>
               <div class="md-ellipsis">
-                Benzimidazole antibiotics
+                Benzimidazoles
               </div>
             </div>
           </a>
         
         
           
-          <a href="dataset_7.html" class="md-footer__link md-footer__link--next" aria-label="Next: Chelate Complexes">
+          <a href="dataset_7.html" class="md-footer__link md-footer__link--next" aria-label="Next: Complexes">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Chelate Complexes
+                Complexes
               </div>
             </div>
             <div class="md-footer__button md-icon">

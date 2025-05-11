@@ -22,7 +22,7 @@
     
     
       
-        <title>Photostability of Multi-Component Crystals - ChemX</title>
+        <title>Co-crystals - ChemX</title>
       
     
     
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Photostability of Multi-Component Crystals
+              Co-crystals
             
           </span>
         </div>
@@ -674,7 +674,7 @@
   
   
   <span class="md-ellipsis">
-    Cytotoxicity
+    Cytotox
     
   </span>
   
@@ -766,7 +766,7 @@
   
   
   <span class="md-ellipsis">
-    Magnetic nanomaterials
+    Nanomag
     
   </span>
   
@@ -851,7 +851,7 @@
   
   
   <span class="md-ellipsis">
-    Benzimidazole antibiotics
+    Benzimidazoles
     
   </span>
   
@@ -874,7 +874,7 @@
   
   
   <span class="md-ellipsis">
-    Oxazolidinone Antibiotics
+    Oxazolidinones
     
   </span>
   
@@ -897,7 +897,7 @@
   
   
   <span class="md-ellipsis">
-    Chelate Complexes
+    Complexes
     
   </span>
   
@@ -952,7 +952,7 @@
   
   
   <span class="md-ellipsis">
-    Photostability of Multi-Component Crystals
+    Co-crystals
     
   </span>
   
@@ -965,7 +965,7 @@
   
   
   <span class="md-ellipsis">
-    Photostability of Multi-Component Crystals
+    Co-crystals
     
   </span>
   
@@ -1006,9 +1006,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#metadata-article-and-source-information" class="md-nav__link">
+  <a href="#metadata" class="md-nav__link">
     <span class="md-ellipsis">
-      Metadata – Article and Source Information
+      Metadata
     </span>
   </a>
   
@@ -1027,15 +1027,6 @@
   <a href="#validation-results" class="md-nav__link">
     <span class="md-ellipsis">
       Validation Results
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benchmark-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benchmark Results
     </span>
   </a>
   
@@ -1100,8 +1091,6 @@
       
         
       
-        
-      
     
     
     
@@ -1151,29 +1140,6 @@
   
   <span class="md-ellipsis">
     Team
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../about/how_to_cite.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    How to cite
     
   </span>
   
@@ -1259,9 +1225,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#metadata-article-and-source-information" class="md-nav__link">
+  <a href="#metadata" class="md-nav__link">
     <span class="md-ellipsis">
-      Metadata – Article and Source Information
+      Metadata
     </span>
   </a>
   
@@ -1280,15 +1246,6 @@
   <a href="#validation-results" class="md-nav__link">
     <span class="md-ellipsis">
       Validation Results
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benchmark-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benchmark Results
     </span>
   </a>
   
@@ -1325,7 +1282,7 @@
 <strong>Description:</strong><br />
 The dataset contains information on photostable drug molecules and their multi-component crystalline forms (cocrystals or salts). For each entry, data is extracted on the drug, coformer, their molecular structures in SMILES format, the ratio in the crystal, and the change in photostability relative to the original drug.</p>
 <p><strong>Total number of records:</strong> 70<br />
-<strong>Number of features (columns):</strong> 7 (main extracted features)<br />
+<strong>Number of features (columns):</strong> 37
 <strong>Data type:</strong> Mixed<br />
 <strong>Application:</strong> Small molecules<br />
 <strong>Automatic validation:</strong> Yes</p>
@@ -1341,37 +1298,104 @@ The dataset contains information on photostable drug molecules and their multi-c
 </thead>
 <tbody>
 <tr>
-<td>name cocrystal</td>
-<td>Name of multi-component crystal in the article</td>
+<td>name_cocrystal</td>
+<td>Name of the multi-component crystal</td>
 </tr>
 <tr>
-<td>ratio cocrystal</td>
-<td>Component ratio forming the multi-component crystal</td>
+<td>name_cocrystal_type_file</td>
+<td>Source type (text, manuscript, figure, etc.)</td>
 </tr>
 <tr>
-<td>name drug</td>
-<td>Name of the drug compound</td>
+<td>name_cocrystal_origin</td>
+<td>Origin in article (figure 1, table 2, etc.)</td>
 </tr>
 <tr>
-<td>SMILES drug</td>
+<td>name_cocrystal_page</td>
+<td>Page number where cocrystal is mentioned</td>
+</tr>
+<tr>
+<td>ratio_cocrystal</td>
+<td>Component ratio used to form the cocrystal</td>
+</tr>
+<tr>
+<td>ratio_cocrystal_page</td>
+<td>Page number for reported ratio</td>
+</tr>
+<tr>
+<td>ratio_cocrystal_origin</td>
+<td>Source of ratio (e.g., text, table)</td>
+</tr>
+<tr>
+<td>name_drug</td>
+<td>Drug name as reported in the article</td>
+</tr>
+<tr>
+<td>SMILES_drug</td>
 <td>Canonical SMILES of the drug molecule</td>
 </tr>
 <tr>
-<td>name coformer</td>
-<td>Name of the coformer used in the crystal</td>
+<td>name_coformer</td>
+<td>Name of the coformer</td>
 </tr>
 <tr>
-<td>SMILES coformer</td>
+<td>SMILES_coformer</td>
 <td>Canonical SMILES of the coformer molecule</td>
 </tr>
 <tr>
-<td>photostability change</td>
-<td>Description of change in photostability (e.g., increases, decreases, does not change)</td>
+<td>photostability_change</td>
+<td>Change in photostability ("increase", "does not change", "decrease")</td>
+</tr>
+<tr>
+<td>photostability_change_origin</td>
+<td>Origin (e.g., figure, table, text)</td>
+</tr>
+<tr>
+<td>photostability_change_page</td>
+<td>Page number where photostability is reported</td>
+</tr>
+<tr>
+<td>doi</td>
+<td>Digital Object Identifier</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Title of the publication</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Name of the journal</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>List of authors</td>
+</tr>
+<tr>
+<td>year</td>
+<td>Year of publication</td>
+</tr>
+<tr>
+<td>access</td>
+<td>1 = open access, 0 = closed</td>
+</tr>
+<tr>
+<td>pdf</td>
+<td>Filename of article’s PDF</td>
+</tr>
+<tr>
+<td>page</td>
+<td>Page number or article identifier</td>
+</tr>
+<tr>
+<td>supplementary</td>
+<td>1 = supplementary material, 0 = main article</td>
+</tr>
+<tr>
+<td>---</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="metadata-article-and-source-information">Metadata – Article and Source Information<a class="headerlink" href="#metadata-article-and-source-information" title="Permanent link">&para;</a></h2>
+<h2 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1382,15 +1406,15 @@ The dataset contains information on photostable drug molecules and their multi-c
 <tbody>
 <tr>
 <td>pdf</td>
-<td>PDF file name</td>
+<td>PDF filename used</td>
 </tr>
 <tr>
 <td>doi</td>
-<td>DOI of the publication</td>
+<td>Digital Object Identifier</td>
 </tr>
 <tr>
 <td>supplementary</td>
-<td>0 – from main article; 1 – from supplementary materials</td>
+<td>Indicates source location: 0 = main; 1 = supplementary</td>
 </tr>
 <tr>
 <td>authors</td>
@@ -1398,7 +1422,7 @@ The dataset contains information on photostable drug molecules and their multi-c
 </tr>
 <tr>
 <td>title</td>
-<td>Full title of the article</td>
+<td>Title of the article</td>
 </tr>
 <tr>
 <td>journal</td>
@@ -1409,24 +1433,12 @@ The dataset contains information on photostable drug molecules and their multi-c
 <td>Year of publication</td>
 </tr>
 <tr>
-<td>open access</td>
-<td>1 – open access; 0 – closed access</td>
-</tr>
-<tr>
 <td>page</td>
-<td>Page or article ID number</td>
+<td>Page number or article ID where data was found</td>
 </tr>
 <tr>
-<td>*_type file</td>
-<td>Source of the data (e.g., manuscript, text, figure, scheme, table)</td>
-</tr>
-<tr>
-<td>*_origin</td>
-<td>Location in the article (e.g., figure 1, table 2, text)</td>
-</tr>
-<tr>
-<td>*_page</td>
-<td>Page number where the information is found</td>
+<td>access</td>
+<td>1 = Open Access, 0 = Closed Access</td>
 </tr>
 </tbody>
 </table>
@@ -1483,9 +1495,6 @@ The dataset contains information on photostable drug molecules and their multi-c
 <li><code>entry_status</code>: Final status (e.g., Verified, Requires correction)  </li>
 <li><code>comment</code>: Notes on specific issues (e.g., incorrect SMILES)  </li>
 </ul>
-<hr />
-<h2 id="benchmark-results">Benchmark Results<a class="headerlink" href="#benchmark-results" title="Permanent link">&para;</a></h2>
-<p>Coming soon.</p>
 <hr />
 
 
