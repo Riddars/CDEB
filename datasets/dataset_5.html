@@ -399,6 +399,8 @@
       
         
       
+        
+      
     
     
     
@@ -471,6 +473,29 @@
   
   <span class="md-ellipsis">
     Data extraction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../methods/extraction_prompts.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Extraction Prompts
     
   </span>
   
@@ -880,26 +905,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#extraction-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extraction Prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-scheme" class="md-nav__link">
     <span class="md-ellipsis">
       Data Scheme
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Data Scheme">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#column-descriptions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Column Descriptions
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1240,26 +1259,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#extraction-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extraction Prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-scheme" class="md-nav__link">
     <span class="md-ellipsis">
       Data Scheme
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Data Scheme">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#column-descriptions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Column Descriptions
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1333,6 +1346,30 @@
 <strong>Input data type:</strong> Mixed<br />
 <strong>Domain:</strong> Small molecules / antibacterial compounds<br />
 <strong>Automatic validation:</strong> Yes</p>
+<hr />
+<h2 id="extraction-prompt">Extraction Prompt<a class="headerlink" href="#extraction-prompt" title="Permanent link">&para;</a></h2>
+<p>This dataset was created using a specialized prompt for extracting information about benzimidazole antibiotics and their antimicrobial activity. The extraction system was configured to:</p>
+<p><strong>System Message:</strong>
+"Domain-specific chemical information extraction assistant specializing in chemistry of small molecules, particularly antibiotics and their properties."</p>
+<p><strong>Extraction Parameters:</strong>
+- Target compounds: Benzimidazole antibiotics
+- Target properties: MIC or pMIC measurements
+- Test organisms: Staphylococcus aureus and Escherichia coli
+- Required fields:
+  - <code>compound_id</code>: Molecule identifier within the article
+  - <code>smiles</code>: SMILES representation of benzimidazole antibiotic
+  - <code>target_type</code>: MIC or pMIC
+  - <code>target_relation</code>: =, &lt;, or &gt;
+  - <code>target_value</code>: Numeric value
+  - <code>target_units</code>: Measurement units
+  - <code>bacteria</code>: Test organism name</p>
+<p><strong>Extraction Rules:</strong>
+1. Each MIC/pMIC mention extracted separately
+2. No filtering or deduplication
+3. Ranges preserved as given
+4. Complete SMILES strings constructed from scaffolds and residues
+5. Only S. aureus and E. coli measurements included
+6. Missing fields marked as "NOT_DETECTED"</p>
 <hr />
 <h2 id="data-scheme">Data Scheme<a class="headerlink" href="#data-scheme" title="Permanent link">&para;</a></h2>
 <h3 id="column-descriptions">Column Descriptions<a class="headerlink" href="#column-descriptions" title="Permanent link">&para;</a></h3>
